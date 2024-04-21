@@ -1,0 +1,14 @@
+项目中右键打开open git bash here
+git config --global user.name MuchError
+git config --global user.email 2116433797@qq.com
+git init			# 初始化项目文件
+git add .                 # 添加文件夹内所有文件
+git add [文件名] 	# 添加单个文件
+git status		# 查看提交状态
+git remote add origin [git仓库地址] 		# 关联远程仓库
+git pull origin master	 		# master为创建的一个仓库分支，也可修改默认分支
+git push -u origin master 		# 推送到远程仓库（新建的远程仓库是空的，所以要加上-u，否则不加-u）
+
+
+
+
