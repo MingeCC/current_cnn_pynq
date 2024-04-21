@@ -1,0 +1,9 @@
+{
+	"version": "1.0",
+	"modules": {
+		"max_pool2": {
+			"proto_instances": {
+			}
+		}
+	}
+}

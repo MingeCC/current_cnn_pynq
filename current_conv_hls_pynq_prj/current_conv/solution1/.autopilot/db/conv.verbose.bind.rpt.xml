@@ -1,0 +1,51 @@
+<profile>
+
+<section name = "Vivado HLS Report for 'conv'" level="0">
+<item name = "Date">Sun Apr  7 13:15:18 2024
+</item>
+<item name = "Version">2018.3 (Build 2405991 on Thu Dec 06 23:56:15 MST 2018)</item>
+<item name = "Project">current_conv</item>
+<item name = "Solution">solution1</item>
+<item name = "Product family">zynq</item>
+<item name = "Target device">xc7z020clg400-1</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing (ns)">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="4">Clock, Target, Estimated, Uncertainty</keys>
+<column name="ap_clk">50.00, 43.750, 6.25</column>
+</table>
+</item>
+</section>
+</item>
+<item name = "Latency (clock cycles)">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="6">, min, max, min, max, Type</keys>
+<column name="">77906, 77906, 77906, 77906, none</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="7">Instance, Module, min, max, min, max, Type</keys>
+<column name="grp_multiply_fu_292">multiply, 92, 92, 92, 92, none</column>
+<column name="grp_load_feature_fu_301">load_feature, 100, 100, 100, 100, none</column>
+<column name="grp_load_weight_fu_316">load_weight, 100, 100, 100, 100, none</column>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+<column name="- loop_chout">77870, 77870, 7787, -, -, 10, no</column>
+<column name=" + loop_hout">7785, 7785, 1557, -, -, 5, no</column>
+<column name="  ++ loop_wout">1555, 1555, 311, -, -, 5, no</column>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+</profile>

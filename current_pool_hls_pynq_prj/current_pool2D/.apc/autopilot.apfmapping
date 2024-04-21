@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="current_pool2.cpp" path="F:\Desktop\HLS_study\current\current_pool2D\current_pool2.cpp"/>
+  </source>
+  <testbench>
+    <originFiles name="main.cpp" path="F:\Desktop\HLS_study\current\current_pool2D\main.cpp"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>

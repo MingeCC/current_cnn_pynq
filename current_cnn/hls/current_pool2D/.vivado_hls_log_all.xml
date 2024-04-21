@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vivadoHLSLog:LogRoot xmlns:vivadoHLSLog="www.xilinx.com/vivadoHLSLog">
+  <errorLogs>
+    <logs>
+      <synLog/>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </errorLogs>
+  <warningLogs>
+    <logs>
+      <synLog>
+        <logs message="WARNING: [SCHED 204-69] Unable to schedule bus request on port 'gmem' (current_pool2D/current_pool2.cpp:31) due to limited memory ports. Please consider using a memory core with more ports or partitioning the array." projectName="current_pool2D" solutionName="solution1" date="2024-04-03T17:40:12.851+0800" type="Warning"/>
+        <logs message="WARNING: [SYN 201-107] Renaming port name 'max_pool2/out' to 'max_pool2/out_r' to avoid the conflict with HDL keywords or other object names." projectName="current_pool2D" solutionName="solution1" date="2024-04-03T17:40:12.711+0800" type="Warning"/>
+        <logs message="WARNING: [SYN 201-107] Renaming port name 'max_pool2/in' to 'max_pool2/in_r' to avoid the conflict with HDL keywords or other object names." projectName="current_pool2D" solutionName="solution1" date="2024-04-03T17:40:12.708+0800" type="Warning"/>
+      </synLog>
+      <simLog/>
+      <mgLog/>
+      <packageLog>
+        <logs message="WARNING: [IP_Flow 19-4832] The IP name 'max_pool2_ap_fcmp_0_no_dsp_32' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues." projectName="current_pool2D" solutionName="solution1" date="2024-04-03T17:40:32.334+0800" type="Warning"/>
+      </packageLog>
+      <csimLog/>
+    </logs>
+  </warningLogs>
+</vivadoHLSLog:LogRoot>

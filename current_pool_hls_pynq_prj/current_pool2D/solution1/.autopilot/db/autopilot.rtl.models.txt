@@ -1,0 +1,5 @@
+max_pool2_fcmp_32bkb
+max_pool2_mul_64ncud
+max_pool2_AXILiteS_s_axi
+max_pool2_gmem_m_axi
+max_pool2

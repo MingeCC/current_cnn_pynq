@@ -1,0 +1,11 @@
+vhdl xil_defaultlib  \
+"../../../../current_cnn.srcs/sources_1/bd/design_1/ipshared/b00e/hdl/ip/max_pool2_ap_fcmp_0_no_dsp_32.vhd" \
+"../../../bd/design_1/ip/design_1_max_pool2_0_2/sim/design_1_max_pool2_0_2.vhd" \
+"../../../bd/design_1/ip/design_1_rst_ps7_0_50M_0/sim/design_1_rst_ps7_0_50M_0.vhd" \
+"../../../bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_1/sim/bd_afc3_psr_aclk_0.vhd" \
+"../../../bd/design_1/ip/design_1_axi_smc_1_0/bd_0/ip/ip_1/sim/bd_a878_psr_aclk_0.vhd" \
+"../../../../current_cnn.srcs/sources_1/bd/design_1/ipshared/d8df/hdl/ip/conv_ap_fadd_0_full_dsp_32.vhd" \
+"../../../../current_cnn.srcs/sources_1/bd/design_1/ipshared/d8df/hdl/ip/conv_ap_fmul_0_max_dsp_32.vhd" \
+"../../../bd/design_1/ip/design_1_conv_0_0/sim/design_1_conv_0_0.vhd" \
+
+nosort
