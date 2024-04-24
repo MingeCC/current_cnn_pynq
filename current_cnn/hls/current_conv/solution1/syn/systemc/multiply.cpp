@@ -32,14 +32,14 @@ const sc_lv<64> multiply::ap_const_lv64_1 = "1";
 const sc_lv<32> multiply::ap_const_lv32_2 = "10";
 
 multiply::multiply(sc_module_name name) : sc_module(name), mVcdFile(0) {
-    conv_fadd_32ns_32bkb_U18 = new conv_fadd_32ns_32bkb<1,1,32,32,32>("conv_fadd_32ns_32bkb_U18");
-    conv_fadd_32ns_32bkb_U18->din0(sum_2_reg_154);
-    conv_fadd_32ns_32bkb_U18->din1(tmp_9_fu_193_p2);
-    conv_fadd_32ns_32bkb_U18->dout(sum_fu_188_p2);
-    conv_fmul_32ns_32cud_U19 = new conv_fmul_32ns_32cud<1,1,32,32,32>("conv_fmul_32ns_32cud_U19");
-    conv_fmul_32ns_32cud_U19->din0(feature_buffer_q0);
-    conv_fmul_32ns_32cud_U19->din1(weight_buffer_q0);
-    conv_fmul_32ns_32cud_U19->dout(tmp_9_fu_193_p2);
+    conv_fadd_32ns_32bkb_U20 = new conv_fadd_32ns_32bkb<1,1,32,32,32>("conv_fadd_32ns_32bkb_U20");
+    conv_fadd_32ns_32bkb_U20->din0(sum_2_reg_154);
+    conv_fadd_32ns_32bkb_U20->din1(tmp_9_fu_193_p2);
+    conv_fadd_32ns_32bkb_U20->dout(sum_fu_188_p2);
+    conv_fmul_32ns_32cud_U21 = new conv_fmul_32ns_32cud<1,1,32,32,32>("conv_fmul_32ns_32cud_U21");
+    conv_fmul_32ns_32cud_U21->din0(feature_buffer_q0);
+    conv_fmul_32ns_32cud_U21->din1(weight_buffer_q0);
+    conv_fmul_32ns_32cud_U21->dout(tmp_9_fu_193_p2);
 
     SC_METHOD(thread_ap_clk_no_reset_);
     dont_initialize();
@@ -582,8 +582,8 @@ multiply::~multiply() {
     if (mVcdFile) 
         sc_close_vcd_trace_file(mVcdFile);
 
-    delete conv_fadd_32ns_32bkb_U18;
-    delete conv_fmul_32ns_32cud_U19;
+    delete conv_fadd_32ns_32bkb_U20;
+    delete conv_fmul_32ns_32cud_U21;
 }
 
 void multiply::thread_ap_clk_no_reset_() {

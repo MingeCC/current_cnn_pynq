@@ -6740,14 +6740,15 @@ typedef float data_t;
 
 
 
-void load_feature(data_t feature_in[], data_t feature_buffer[], int chin, int kx, int ky, int win,int hin, int x, int y)
+void load_feature(data_t feature_in[], data_t feature_buffer[], int chin, int kx, int ky,
+  int win,int hin,int stride, int padding, int x, int y)
 {
 
 
 
+
+
     int index = 0;
-    int stride = 1;
-    int padding = 0;
     for (int c = 0; c < chin; c++) {
 #pragma HLS LOOP_TRIPCOUNT min=10 max=10 avg=10
 
@@ -6758,8 +6759,10 @@ void load_feature(data_t feature_in[], data_t feature_buffer[], int chin, int kx
 #pragma HLS LOOP_TRIPCOUNT min=3 max=3 avg=3
 #pragma HLS PIPELINE II=1
 
+
  int xi = x * stride + j - padding;
                 int yi = y * stride + i - padding;
+
                 if (xi >= 0 && xi < win && yi >= 0 && yi < hin) {
                     feature_buffer[index] = feature_in[c * win * hin + yi * win + xi];
                 } else {
@@ -6770,7 +6773,7 @@ void load_feature(data_t feature_in[], data_t feature_buffer[], int chin, int kx
         }
 
     }
-# 54 "current_conv/current_conv.cpp"
+# 57 "current_conv/current_conv.cpp"
 }
 
 void load_weight(data_t weight[],data_t weight_buffer[], int chin, int kx, int ky)
@@ -6845,7 +6848,6 @@ void conv(int chin, int chout, int kx, int ky, int win, int hin, int stride, int
     data_t feature_buffer[10 * 10 * 256];
     data_t weight_buffer[10 * 10 * 256];
 
-
 loop_chout:for (int cout = 0; cout < chout; cout++) {
 #pragma HLS LOOP_TRIPCOUNT min=10 max=10 avg=10
 
@@ -6857,7 +6859,7 @@ loop_chout:for (int cout = 0; cout < chout; cout++) {
 #pragma HLS LOOP_TRIPCOUNT min=5 max=5 avg=5
 
 
- load_feature(feature_in, feature_buffer, chin, kx, ky, win,hin, w * stride - padding, h * stride - padding);
+ load_feature(feature_in, feature_buffer, chin, kx, ky, win,hin,stride, padding, w , h);
                 load_weight(&weight[cout * chin * kx * ky],weight_buffer,chin, kx, ky);
 
                 data_t conv_sum =multiply(feature_buffer, weight_buffer, chin, kx, ky);

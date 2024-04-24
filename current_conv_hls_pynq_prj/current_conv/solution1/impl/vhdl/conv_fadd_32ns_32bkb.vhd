@@ -1,5 +1,5 @@
 -- ==============================================================
--- File generated on Sun Apr 07 13:15:30 +0800 2024
+-- File generated on Wed Apr 24 21:45:53 +0800 2024
 -- Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
 -- SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
 -- IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
@@ -10,7 +10,7 @@ use ieee.std_logic_1164.all;
 
 entity conv_fadd_32ns_32bkb is
     generic (
-        ID         : integer := 18;
+        ID         : integer := 20;
         NUM_STAGE  : integer := 1;
         din0_WIDTH : integer := 32;
         din1_WIDTH : integer := 32;

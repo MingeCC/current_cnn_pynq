@@ -15,7 +15,7 @@
       <simLog/>
       <mgLog/>
       <packageLog>
-        <logs message="WARNING: [IP_Flow 19-4832] The IP name 'conv_ap_fadd_0_full_dsp_32' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues." projectName="current_conv" solutionName="solution1" date="2024-04-07T13:15:35.727+0800" type="Warning"/>
+        <logs message="WARNING: [IP_Flow 19-4832] The IP name 'conv_ap_fadd_0_full_dsp_32' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues." projectName="current_conv" solutionName="solution1" date="2024-04-24T21:45:59.261+0800" type="Warning"/>
       </packageLog>
       <csimLog/>
     </logs>

@@ -191,9 +191,9 @@ set RtlHierarchyInfo {[
 		"InDataflowNetwork" : "0",
 		"HasNonBlockingOperation" : "0",
 		"WaitState" : [
-			{"State" : "ap_ST_fsm_state44", "FSM" : "ap_CS_fsm", "SubInstance" : "grp_multiply_fu_292"},
-			{"State" : "ap_ST_fsm_state40", "FSM" : "ap_CS_fsm", "SubInstance" : "grp_load_feature_fu_301"},
-			{"State" : "ap_ST_fsm_state42", "FSM" : "ap_CS_fsm", "SubInstance" : "grp_load_weight_fu_316"}],
+			{"State" : "ap_ST_fsm_state44", "FSM" : "ap_CS_fsm", "SubInstance" : "grp_multiply_fu_272"},
+			{"State" : "ap_ST_fsm_state40", "FSM" : "ap_CS_fsm", "SubInstance" : "grp_load_feature_fu_281"},
+			{"State" : "ap_ST_fsm_state42", "FSM" : "ap_CS_fsm", "SubInstance" : "grp_load_weight_fu_300"}],
 		"Port" : [
 			{"Name" : "gmem", "Type" : "MAXI", "Direction" : "IO",
 				"BlockSignal" : [
@@ -203,8 +203,8 @@ set RtlHierarchyInfo {[
 					{"Name" : "gmem_blk_n_W", "Type" : "RtlSignal"},
 					{"Name" : "gmem_blk_n_B", "Type" : "RtlSignal"}],
 				"SubConnect" : [
-					{"ID" : "9", "SubInstance" : "grp_load_weight_fu_316", "Port" : "weight"},
-					{"ID" : "8", "SubInstance" : "grp_load_feature_fu_301", "Port" : "feature_in"}]},
+					{"ID" : "8", "SubInstance" : "grp_load_feature_fu_281", "Port" : "feature_in"},
+					{"ID" : "9", "SubInstance" : "grp_load_weight_fu_300", "Port" : "weight"}]},
 			{"Name" : "chin", "Type" : "None", "Direction" : "I"},
 			{"Name" : "chout", "Type" : "None", "Direction" : "I"},
 			{"Name" : "kx", "Type" : "None", "Direction" : "I"},
@@ -221,7 +221,7 @@ set RtlHierarchyInfo {[
 	{"ID" : "2", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.conv_gmem_m_axi_U", "Parent" : "0"},
 	{"ID" : "3", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.feature_buffer_U", "Parent" : "0"},
 	{"ID" : "4", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.weight_buffer_U", "Parent" : "0"},
-	{"ID" : "5", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.grp_multiply_fu_292", "Parent" : "0", "Child" : ["6", "7"],
+	{"ID" : "5", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.grp_multiply_fu_272", "Parent" : "0", "Child" : ["6", "7"],
 		"CDFG" : "multiply",
 		"Protocol" : "ap_ctrl_hs",
 		"ControlExist" : "1", "ap_start" : "1", "ap_ready" : "1", "ap_done" : "1", "ap_continue" : "0", "ap_idle" : "1",
@@ -240,9 +240,9 @@ set RtlHierarchyInfo {[
 			{"Name" : "chin", "Type" : "None", "Direction" : "I"},
 			{"Name" : "kx", "Type" : "None", "Direction" : "I"},
 			{"Name" : "ky", "Type" : "None", "Direction" : "I"}]},
-	{"ID" : "6", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_multiply_fu_292.conv_fadd_32ns_32bkb_U18", "Parent" : "5"},
-	{"ID" : "7", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_multiply_fu_292.conv_fmul_32ns_32cud_U19", "Parent" : "5"},
-	{"ID" : "8", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.grp_load_feature_fu_301", "Parent" : "0",
+	{"ID" : "6", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_multiply_fu_272.conv_fadd_32ns_32bkb_U20", "Parent" : "5"},
+	{"ID" : "7", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_multiply_fu_272.conv_fmul_32ns_32cud_U21", "Parent" : "5"},
+	{"ID" : "8", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.grp_load_feature_fu_281", "Parent" : "0",
 		"CDFG" : "load_feature",
 		"Protocol" : "ap_ctrl_hs",
 		"ControlExist" : "1", "ap_start" : "1", "ap_ready" : "1", "ap_done" : "1", "ap_continue" : "0", "ap_idle" : "1",
@@ -267,9 +267,11 @@ set RtlHierarchyInfo {[
 			{"Name" : "ky", "Type" : "None", "Direction" : "I"},
 			{"Name" : "win", "Type" : "None", "Direction" : "I"},
 			{"Name" : "hin", "Type" : "None", "Direction" : "I"},
+			{"Name" : "stride", "Type" : "None", "Direction" : "I"},
+			{"Name" : "padding", "Type" : "None", "Direction" : "I"},
 			{"Name" : "x", "Type" : "None", "Direction" : "I"},
 			{"Name" : "y", "Type" : "None", "Direction" : "I"}]},
-	{"ID" : "9", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.grp_load_weight_fu_316", "Parent" : "0",
+	{"ID" : "9", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.grp_load_weight_fu_300", "Parent" : "0",
 		"CDFG" : "load_weight",
 		"Protocol" : "ap_ctrl_hs",
 		"ControlExist" : "1", "ap_start" : "1", "ap_ready" : "1", "ap_done" : "1", "ap_continue" : "0", "ap_idle" : "1",
@@ -293,9 +295,9 @@ set RtlHierarchyInfo {[
 			{"Name" : "chin", "Type" : "None", "Direction" : "I"},
 			{"Name" : "kx", "Type" : "None", "Direction" : "I"},
 			{"Name" : "ky", "Type" : "None", "Direction" : "I"}]},
-	{"ID" : "10", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.conv_fadd_32ns_32bkb_U27", "Parent" : "0"},
-	{"ID" : "11", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.conv_sdiv_32ns_32dEe_U28", "Parent" : "0"},
-	{"ID" : "12", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.conv_sdiv_32ns_32dEe_U29", "Parent" : "0"}]}
+	{"ID" : "10", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.conv_fadd_32ns_32bkb_U29", "Parent" : "0"},
+	{"ID" : "11", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.conv_sdiv_32ns_32dEe_U30", "Parent" : "0"},
+	{"ID" : "12", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.conv_sdiv_32ns_32dEe_U31", "Parent" : "0"}]}
 
 
 set ArgLastReadFirstWriteLatency {
@@ -328,6 +330,8 @@ set ArgLastReadFirstWriteLatency {
 		ky {Type I LastRead 0 FirstWrite -1}
 		win {Type I LastRead 0 FirstWrite -1}
 		hin {Type I LastRead 0 FirstWrite -1}
+		stride {Type I LastRead 0 FirstWrite -1}
+		padding {Type I LastRead 0 FirstWrite -1}
 		x {Type I LastRead 0 FirstWrite -1}
 		y {Type I LastRead 0 FirstWrite -1}}
 	load_weight {

@@ -18,5 +18,5 @@
   <xd:arg xd:name="feature_out" xd:originalName="feature_out" xd:direction="in" xd:interfaceRef="s_axi_AXILiteS" xd:busTypeRef="axilite" xd:aximmInterfaceRef="m_axi_gmem" xd:dataWidth="32" xd:offset="0x60" xd:handshakeRef="ap_none"/>
   <xd:arg xd:name="bias" xd:originalName="bias" xd:direction="in" xd:interfaceRef="s_axi_AXILiteS" xd:busTypeRef="axilite" xd:aximmInterfaceRef="m_axi_gmem" xd:dataWidth="32" xd:offset="0x68" xd:handshakeRef="ap_none"/>
   <xd:latencyEstimates xd:best-case="77906" xd:worst-case="77906" xd:average-case="77906"/>
-  <xd:resourceEstimates xd:LUT="8160" xd:FF="5226" xd:BRAM="130" xd:DSP="61"/>
+  <xd:resourceEstimates xd:LUT="8104" xd:FF="5098" xd:BRAM="130" xd:DSP="67"/>
 </xd:acceleratorMap>

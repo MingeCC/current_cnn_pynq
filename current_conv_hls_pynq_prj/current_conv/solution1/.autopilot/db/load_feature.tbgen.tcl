@@ -20,8 +20,10 @@ set C_modelArgList {
 	{ ky int 32 regular  }
 	{ win int 32 regular  }
 	{ hin int 32 regular  }
-	{ x int 32 regular  }
-	{ y int 32 regular  }
+	{ stride int 32 regular  }
+	{ padding int 32 regular  }
+	{ x int 31 regular  }
+	{ y int 31 regular  }
 }
 set C_modelArgMapList {[ 
 	{ "Name" : "feature_in", "interface" : "axi_master", "bitwidth" : 32, "direction" : "READONLY"} , 
@@ -32,10 +34,12 @@ set C_modelArgMapList {[
  	{ "Name" : "ky", "interface" : "wire", "bitwidth" : 32, "direction" : "READONLY"} , 
  	{ "Name" : "win", "interface" : "wire", "bitwidth" : 32, "direction" : "READONLY"} , 
  	{ "Name" : "hin", "interface" : "wire", "bitwidth" : 32, "direction" : "READONLY"} , 
- 	{ "Name" : "x", "interface" : "wire", "bitwidth" : 32, "direction" : "READONLY"} , 
- 	{ "Name" : "y", "interface" : "wire", "bitwidth" : 32, "direction" : "READONLY"} ]}
+ 	{ "Name" : "stride", "interface" : "wire", "bitwidth" : 32, "direction" : "READONLY"} , 
+ 	{ "Name" : "padding", "interface" : "wire", "bitwidth" : 32, "direction" : "READONLY"} , 
+ 	{ "Name" : "x", "interface" : "wire", "bitwidth" : 31, "direction" : "READONLY"} , 
+ 	{ "Name" : "y", "interface" : "wire", "bitwidth" : 31, "direction" : "READONLY"} ]}
 # RTL Port declarations: 
-set portNum 63
+set portNum 65
 set portList { 
 	{ ap_clk sc_in sc_logic 1 clock -1 } 
 	{ ap_rst sc_in sc_logic 1 reset -1 active_high_sync } 
@@ -98,8 +102,10 @@ set portList {
 	{ ky sc_in sc_lv 32 signal 5 } 
 	{ win sc_in sc_lv 32 signal 6 } 
 	{ hin sc_in sc_lv 32 signal 7 } 
-	{ x sc_in sc_lv 32 signal 8 } 
-	{ y sc_in sc_lv 32 signal 9 } 
+	{ stride sc_in sc_lv 32 signal 8 } 
+	{ padding sc_in sc_lv 32 signal 9 } 
+	{ x sc_in sc_lv 31 signal 10 } 
+	{ y sc_in sc_lv 31 signal 11 } 
 }
 set NewPortList {[ 
 	{ "name": "ap_clk", "direction": "in", "datatype": "sc_logic", "bitwidth":1, "type": "clock", "bundle":{"name": "ap_clk", "role": "default" }} , 
@@ -163,8 +169,10 @@ set NewPortList {[
  	{ "name": "ky", "direction": "in", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "ky", "role": "default" }} , 
  	{ "name": "win", "direction": "in", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "win", "role": "default" }} , 
  	{ "name": "hin", "direction": "in", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "hin", "role": "default" }} , 
- 	{ "name": "x", "direction": "in", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "x", "role": "default" }} , 
- 	{ "name": "y", "direction": "in", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "y", "role": "default" }}  ]}
+ 	{ "name": "stride", "direction": "in", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "stride", "role": "default" }} , 
+ 	{ "name": "padding", "direction": "in", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "padding", "role": "default" }} , 
+ 	{ "name": "x", "direction": "in", "datatype": "sc_lv", "bitwidth":31, "type": "signal", "bundle":{"name": "x", "role": "default" }} , 
+ 	{ "name": "y", "direction": "in", "datatype": "sc_lv", "bitwidth":31, "type": "signal", "bundle":{"name": "y", "role": "default" }}  ]}
 
 set RtlHierarchyInfo {[
 	{"ID" : "0", "Level" : "0", "Path" : "`AUTOTB_DUT_INST", "Parent" : "",
@@ -192,6 +200,8 @@ set RtlHierarchyInfo {[
 			{"Name" : "ky", "Type" : "None", "Direction" : "I"},
 			{"Name" : "win", "Type" : "None", "Direction" : "I"},
 			{"Name" : "hin", "Type" : "None", "Direction" : "I"},
+			{"Name" : "stride", "Type" : "None", "Direction" : "I"},
+			{"Name" : "padding", "Type" : "None", "Direction" : "I"},
 			{"Name" : "x", "Type" : "None", "Direction" : "I"},
 			{"Name" : "y", "Type" : "None", "Direction" : "I"}]}]}
 
@@ -206,6 +216,8 @@ set ArgLastReadFirstWriteLatency {
 		ky {Type I LastRead 0 FirstWrite -1}
 		win {Type I LastRead 0 FirstWrite -1}
 		hin {Type I LastRead 0 FirstWrite -1}
+		stride {Type I LastRead 0 FirstWrite -1}
+		padding {Type I LastRead 0 FirstWrite -1}
 		x {Type I LastRead 0 FirstWrite -1}
 		y {Type I LastRead 0 FirstWrite -1}}}
 
@@ -229,6 +241,8 @@ set Spec2ImplPortList {
 	ky { ap_none {  { ky in_data 0 32 } } }
 	win { ap_none {  { win in_data 0 32 } } }
 	hin { ap_none {  { hin in_data 0 32 } } }
-	x { ap_none {  { x in_data 0 32 } } }
-	y { ap_none {  { y in_data 0 32 } } }
+	stride { ap_none {  { stride in_data 0 32 } } }
+	padding { ap_none {  { padding in_data 0 32 } } }
+	x { ap_none {  { x in_data 0 31 } } }
+	y { ap_none {  { y in_data 0 31 } } }
 }

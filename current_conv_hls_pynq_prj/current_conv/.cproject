@@ -165,6 +165,8 @@
                             							
                             <option id="gnu.cpp.compiler.option.include.paths.701797538" name="Include paths (-I)" superClass="gnu.cpp.compiler.option.include.paths" valueType="includePath">
                                 								
+                                <listOptionValue builtIn="false" value="F:/Desktop/PRJ/current_lenet/current_conv_hls_pynq_prj"/>
+                                								
                                 <listOptionValue builtIn="false" value="D:/Vivado/Vivado/2018.3/win64/tools/auto_cc/include"/>
                                 								
                                 <listOptionValue builtIn="false" value="D:/Vivado/Vivado/2018.3/win64/tools/systemc/include"/>
@@ -172,8 +174,6 @@
                                 <listOptionValue builtIn="false" value="D:/Vivado/Vivado/2018.3/include/etc"/>
                                 								
                                 <listOptionValue builtIn="false" value="D:/Vivado/Vivado/2018.3/include"/>
-                                								
-                                <listOptionValue builtIn="false" value="F:/Desktop/Vivado_prj/current_conv_hls_pynq_prj"/>
                                 								
                                 <listOptionValue builtIn="false" value="D:/Vivado/Vivado/2018.3/include/ap_sysc"/>
                                 							
@@ -343,6 +343,8 @@
                             							
                             <option id="gnu.cpp.compiler.option.include.paths.1758471453" name="Include paths (-I)" superClass="gnu.cpp.compiler.option.include.paths" valueType="includePath">
                                 								
+                                <listOptionValue builtIn="false" value="F:/Desktop/PRJ/current_lenet/current_conv_hls_pynq_prj"/>
+                                								
                                 <listOptionValue builtIn="false" value="D:/Vivado/Vivado/2018.3/win64/tools/auto_cc/include"/>
                                 								
                                 <listOptionValue builtIn="false" value="D:/Vivado/Vivado/2018.3/win64/tools/systemc/include"/>
@@ -350,8 +352,6 @@
                                 <listOptionValue builtIn="false" value="D:/Vivado/Vivado/2018.3/include/etc"/>
                                 								
                                 <listOptionValue builtIn="false" value="D:/Vivado/Vivado/2018.3/include"/>
-                                								
-                                <listOptionValue builtIn="false" value="F:/Desktop/Vivado_prj/current_conv_hls_pynq_prj"/>
                                 								
                                 <listOptionValue builtIn="false" value="D:/Vivado/Vivado/2018.3/include/ap_sysc"/>
                                 							

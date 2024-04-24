@@ -392,14 +392,14 @@
 						<id>14</id>
 						<name>tmp1</name>
 						<fileName>current_conv/current_conv.cpp</fileName>
-						<fileDirectory>F:\Desktop\HLS_study\current</fileDirectory>
-						<lineNumber>62</lineNumber>
+						<fileDirectory>F:\Desktop\PRJ\current_lenet\current_conv_hls_pynq_prj</fileDirectory>
+						<lineNumber>65</lineNumber>
 						<contextFuncName>load_weight</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item class_id="11" tracking_level="0" version="0">
-								<first>F:\Desktop\HLS_study\current</first>
+								<first>F:\Desktop\PRJ\current_lenet\current_conv_hls_pynq_prj</first>
 								<second class_id="12" tracking_level="0" version="0">
 									<count>1</count>
 									<item_version>0</item_version>
@@ -408,7 +408,7 @@
 											<first>current_conv/current_conv.cpp</first>
 											<second>load_weight</second>
 										</first>
-										<second>62</second>
+										<second>65</second>
 									</item>
 								</second>
 							</item>
@@ -441,14 +441,14 @@
 						<id>15</id>
 						<name>n</name>
 						<fileName>current_conv/current_conv.cpp</fileName>
-						<fileDirectory>F:\Desktop\HLS_study\current</fileDirectory>
-						<lineNumber>62</lineNumber>
+						<fileDirectory>F:\Desktop\PRJ\current_lenet\current_conv_hls_pynq_prj</fileDirectory>
+						<lineNumber>65</lineNumber>
 						<contextFuncName>load_weight</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>F:\Desktop\HLS_study\current</first>
+								<first>F:\Desktop\PRJ\current_lenet\current_conv_hls_pynq_prj</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -457,7 +457,7 @@
 											<first>current_conv/current_conv.cpp</first>
 											<second>load_weight</second>
 										</first>
-										<second>62</second>
+										<second>65</second>
 									</item>
 								</second>
 							</item>
@@ -490,14 +490,14 @@
 						<id>16</id>
 						<name>tmp_3_cast</name>
 						<fileName>current_conv/current_conv.cpp</fileName>
-						<fileDirectory>F:\Desktop\HLS_study\current</fileDirectory>
-						<lineNumber>68</lineNumber>
+						<fileDirectory>F:\Desktop\PRJ\current_lenet\current_conv_hls_pynq_prj</fileDirectory>
+						<lineNumber>71</lineNumber>
 						<contextFuncName>load_weight</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>F:\Desktop\HLS_study\current</first>
+								<first>F:\Desktop\PRJ\current_lenet\current_conv_hls_pynq_prj</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -506,7 +506,7 @@
 											<first>current_conv/current_conv.cpp</first>
 											<second>load_weight</second>
 										</first>
-										<second>68</second>
+										<second>71</second>
 									</item>
 								</second>
 							</item>
@@ -538,14 +538,14 @@
 						<id>17</id>
 						<name>sext_cast</name>
 						<fileName>current_conv/current_conv.cpp</fileName>
-						<fileDirectory>F:\Desktop\HLS_study\current</fileDirectory>
-						<lineNumber>68</lineNumber>
+						<fileDirectory>F:\Desktop\PRJ\current_lenet\current_conv_hls_pynq_prj</fileDirectory>
+						<lineNumber>71</lineNumber>
 						<contextFuncName>load_weight</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>F:\Desktop\HLS_study\current</first>
+								<first>F:\Desktop\PRJ\current_lenet\current_conv_hls_pynq_prj</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -554,7 +554,7 @@
 											<first>current_conv/current_conv.cpp</first>
 											<second>load_weight</second>
 										</first>
-										<second>68</second>
+										<second>71</second>
 									</item>
 								</second>
 							</item>
@@ -586,14 +586,14 @@
 						<id>18</id>
 						<name>sum2</name>
 						<fileName>current_conv/current_conv.cpp</fileName>
-						<fileDirectory>F:\Desktop\HLS_study\current</fileDirectory>
-						<lineNumber>68</lineNumber>
+						<fileDirectory>F:\Desktop\PRJ\current_lenet\current_conv_hls_pynq_prj</fileDirectory>
+						<lineNumber>71</lineNumber>
 						<contextFuncName>load_weight</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>F:\Desktop\HLS_study\current</first>
+								<first>F:\Desktop\PRJ\current_lenet\current_conv_hls_pynq_prj</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -602,7 +602,7 @@
 											<first>current_conv/current_conv.cpp</first>
 											<second>load_weight</second>
 										</first>
-										<second>68</second>
+										<second>71</second>
 									</item>
 								</second>
 							</item>
@@ -635,14 +635,14 @@
 						<id>19</id>
 						<name>sum2_cast</name>
 						<fileName>current_conv/current_conv.cpp</fileName>
-						<fileDirectory>F:\Desktop\HLS_study\current</fileDirectory>
-						<lineNumber>68</lineNumber>
+						<fileDirectory>F:\Desktop\PRJ\current_lenet\current_conv_hls_pynq_prj</fileDirectory>
+						<lineNumber>71</lineNumber>
 						<contextFuncName>load_weight</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>F:\Desktop\HLS_study\current</first>
+								<first>F:\Desktop\PRJ\current_lenet\current_conv_hls_pynq_prj</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -651,7 +651,7 @@
 											<first>current_conv/current_conv.cpp</first>
 											<second>load_weight</second>
 										</first>
-										<second>68</second>
+										<second>71</second>
 									</item>
 								</second>
 							</item>
@@ -683,14 +683,14 @@
 						<id>20</id>
 						<name>weight_addr</name>
 						<fileName>current_conv/current_conv.cpp</fileName>
-						<fileDirectory>F:\Desktop\HLS_study\current</fileDirectory>
-						<lineNumber>68</lineNumber>
+						<fileDirectory>F:\Desktop\PRJ\current_lenet\current_conv_hls_pynq_prj</fileDirectory>
+						<lineNumber>71</lineNumber>
 						<contextFuncName>load_weight</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>F:\Desktop\HLS_study\current</first>
+								<first>F:\Desktop\PRJ\current_lenet\current_conv_hls_pynq_prj</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -699,7 +699,7 @@
 											<first>current_conv/current_conv.cpp</first>
 											<second>load_weight</second>
 										</first>
-										<second>68</second>
+										<second>71</second>
 									</item>
 								</second>
 							</item>
@@ -732,14 +732,14 @@
 						<id>21</id>
 						<name>weight_addr_rd_req</name>
 						<fileName>current_conv/current_conv.cpp</fileName>
-						<fileDirectory>F:\Desktop\HLS_study\current</fileDirectory>
-						<lineNumber>68</lineNumber>
+						<fileDirectory>F:\Desktop\PRJ\current_lenet\current_conv_hls_pynq_prj</fileDirectory>
+						<lineNumber>71</lineNumber>
 						<contextFuncName>load_weight</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>F:\Desktop\HLS_study\current</first>
+								<first>F:\Desktop\PRJ\current_lenet\current_conv_hls_pynq_prj</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -748,7 +748,7 @@
 											<first>current_conv/current_conv.cpp</first>
 											<second>load_weight</second>
 										</first>
-										<second>68</second>
+										<second>71</second>
 									</item>
 								</second>
 							</item>
@@ -782,14 +782,14 @@
 						<id>22</id>
 						<name></name>
 						<fileName>current_conv/current_conv.cpp</fileName>
-						<fileDirectory>F:\Desktop\HLS_study\current</fileDirectory>
-						<lineNumber>63</lineNumber>
+						<fileDirectory>F:\Desktop\PRJ\current_lenet\current_conv_hls_pynq_prj</fileDirectory>
+						<lineNumber>66</lineNumber>
 						<contextFuncName>load_weight</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>F:\Desktop\HLS_study\current</first>
+								<first>F:\Desktop\PRJ\current_lenet\current_conv_hls_pynq_prj</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -798,7 +798,7 @@
 											<first>current_conv/current_conv.cpp</first>
 											<second>load_weight</second>
 										</first>
-										<second>63</second>
+										<second>66</second>
 									</item>
 								</second>
 							</item>
@@ -867,14 +867,14 @@
 						<id>25</id>
 						<name>c_cast</name>
 						<fileName>current_conv/current_conv.cpp</fileName>
-						<fileDirectory>F:\Desktop\HLS_study\current</fileDirectory>
-						<lineNumber>63</lineNumber>
+						<fileDirectory>F:\Desktop\PRJ\current_lenet\current_conv_hls_pynq_prj</fileDirectory>
+						<lineNumber>66</lineNumber>
 						<contextFuncName>load_weight</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>F:\Desktop\HLS_study\current</first>
+								<first>F:\Desktop\PRJ\current_lenet\current_conv_hls_pynq_prj</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -883,7 +883,7 @@
 											<first>current_conv/current_conv.cpp</first>
 											<second>load_weight</second>
 										</first>
-										<second>63</second>
+										<second>66</second>
 									</item>
 								</second>
 							</item>
@@ -915,14 +915,14 @@
 						<id>26</id>
 						<name>tmp_s</name>
 						<fileName>current_conv/current_conv.cpp</fileName>
-						<fileDirectory>F:\Desktop\HLS_study\current</fileDirectory>
-						<lineNumber>63</lineNumber>
+						<fileDirectory>F:\Desktop\PRJ\current_lenet\current_conv_hls_pynq_prj</fileDirectory>
+						<lineNumber>66</lineNumber>
 						<contextFuncName>load_weight</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>F:\Desktop\HLS_study\current</first>
+								<first>F:\Desktop\PRJ\current_lenet\current_conv_hls_pynq_prj</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -931,7 +931,7 @@
 											<first>current_conv/current_conv.cpp</first>
 											<second>load_weight</second>
 										</first>
-										<second>63</second>
+										<second>66</second>
 									</item>
 								</second>
 							</item>
@@ -964,14 +964,14 @@
 						<id>27</id>
 						<name>c_1</name>
 						<fileName>current_conv/current_conv.cpp</fileName>
-						<fileDirectory>F:\Desktop\HLS_study\current</fileDirectory>
-						<lineNumber>63</lineNumber>
+						<fileDirectory>F:\Desktop\PRJ\current_lenet\current_conv_hls_pynq_prj</fileDirectory>
+						<lineNumber>66</lineNumber>
 						<contextFuncName>load_weight</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>F:\Desktop\HLS_study\current</first>
+								<first>F:\Desktop\PRJ\current_lenet\current_conv_hls_pynq_prj</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -980,7 +980,7 @@
 											<first>current_conv/current_conv.cpp</first>
 											<second>load_weight</second>
 										</first>
-										<second>63</second>
+										<second>66</second>
 									</item>
 								</second>
 							</item>
@@ -1013,14 +1013,14 @@
 						<id>28</id>
 						<name></name>
 						<fileName>current_conv/current_conv.cpp</fileName>
-						<fileDirectory>F:\Desktop\HLS_study\current</fileDirectory>
-						<lineNumber>63</lineNumber>
+						<fileDirectory>F:\Desktop\PRJ\current_lenet\current_conv_hls_pynq_prj</fileDirectory>
+						<lineNumber>66</lineNumber>
 						<contextFuncName>load_weight</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>F:\Desktop\HLS_study\current</first>
+								<first>F:\Desktop\PRJ\current_lenet\current_conv_hls_pynq_prj</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -1029,7 +1029,7 @@
 											<first>current_conv/current_conv.cpp</first>
 											<second>load_weight</second>
 										</first>
-										<second>63</second>
+										<second>66</second>
 									</item>
 								</second>
 							</item>
@@ -1063,14 +1063,14 @@
 						<id>33</id>
 						<name>tmp_12</name>
 						<fileName>current_conv/current_conv.cpp</fileName>
-						<fileDirectory>F:\Desktop\HLS_study\current</fileDirectory>
-						<lineNumber>68</lineNumber>
+						<fileDirectory>F:\Desktop\PRJ\current_lenet\current_conv_hls_pynq_prj</fileDirectory>
+						<lineNumber>71</lineNumber>
 						<contextFuncName>load_weight</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>F:\Desktop\HLS_study\current</first>
+								<first>F:\Desktop\PRJ\current_lenet\current_conv_hls_pynq_prj</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -1079,7 +1079,7 @@
 											<first>current_conv/current_conv.cpp</first>
 											<second>load_weight</second>
 										</first>
-										<second>68</second>
+										<second>71</second>
 									</item>
 								</second>
 							</item>
@@ -1111,14 +1111,14 @@
 						<id>34</id>
 						<name>weight_addr_read</name>
 						<fileName>current_conv/current_conv.cpp</fileName>
-						<fileDirectory>F:\Desktop\HLS_study\current</fileDirectory>
-						<lineNumber>68</lineNumber>
+						<fileDirectory>F:\Desktop\PRJ\current_lenet\current_conv_hls_pynq_prj</fileDirectory>
+						<lineNumber>71</lineNumber>
 						<contextFuncName>load_weight</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>F:\Desktop\HLS_study\current</first>
+								<first>F:\Desktop\PRJ\current_lenet\current_conv_hls_pynq_prj</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -1127,7 +1127,7 @@
 											<first>current_conv/current_conv.cpp</first>
 											<second>load_weight</second>
 										</first>
-										<second>68</second>
+										<second>71</second>
 									</item>
 								</second>
 							</item>
@@ -1161,14 +1161,14 @@
 						<id>35</id>
 						<name>weight_buffer_addr</name>
 						<fileName>current_conv/current_conv.cpp</fileName>
-						<fileDirectory>F:\Desktop\HLS_study\current</fileDirectory>
-						<lineNumber>68</lineNumber>
+						<fileDirectory>F:\Desktop\PRJ\current_lenet\current_conv_hls_pynq_prj</fileDirectory>
+						<lineNumber>71</lineNumber>
 						<contextFuncName>load_weight</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>F:\Desktop\HLS_study\current</first>
+								<first>F:\Desktop\PRJ\current_lenet\current_conv_hls_pynq_prj</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -1177,7 +1177,7 @@
 											<first>current_conv/current_conv.cpp</first>
 											<second>load_weight</second>
 										</first>
-										<second>68</second>
+										<second>71</second>
 									</item>
 								</second>
 							</item>
@@ -1211,14 +1211,14 @@
 						<id>36</id>
 						<name></name>
 						<fileName>current_conv/current_conv.cpp</fileName>
-						<fileDirectory>F:\Desktop\HLS_study\current</fileDirectory>
-						<lineNumber>68</lineNumber>
+						<fileDirectory>F:\Desktop\PRJ\current_lenet\current_conv_hls_pynq_prj</fileDirectory>
+						<lineNumber>71</lineNumber>
 						<contextFuncName>load_weight</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>F:\Desktop\HLS_study\current</first>
+								<first>F:\Desktop\PRJ\current_lenet\current_conv_hls_pynq_prj</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -1227,7 +1227,7 @@
 											<first>current_conv/current_conv.cpp</first>
 											<second>load_weight</second>
 										</first>
-										<second>68</second>
+										<second>71</second>
 									</item>
 								</second>
 							</item>
@@ -1260,14 +1260,14 @@
 						<id>38</id>
 						<name></name>
 						<fileName>current_conv/current_conv.cpp</fileName>
-						<fileDirectory>F:\Desktop\HLS_study\current</fileDirectory>
-						<lineNumber>63</lineNumber>
+						<fileDirectory>F:\Desktop\PRJ\current_lenet\current_conv_hls_pynq_prj</fileDirectory>
+						<lineNumber>66</lineNumber>
 						<contextFuncName>load_weight</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>F:\Desktop\HLS_study\current</first>
+								<first>F:\Desktop\PRJ\current_lenet\current_conv_hls_pynq_prj</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -1276,7 +1276,7 @@
 											<first>current_conv/current_conv.cpp</first>
 											<second>load_weight</second>
 										</first>
-										<second>63</second>
+										<second>66</second>
 									</item>
 								</second>
 							</item>
@@ -1308,14 +1308,14 @@
 						<id>40</id>
 						<name></name>
 						<fileName>current_conv/current_conv.cpp</fileName>
-						<fileDirectory>F:\Desktop\HLS_study\current</fileDirectory>
-						<lineNumber>71</lineNumber>
+						<fileDirectory>F:\Desktop\PRJ\current_lenet\current_conv_hls_pynq_prj</fileDirectory>
+						<lineNumber>74</lineNumber>
 						<contextFuncName>load_weight</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>F:\Desktop\HLS_study\current</first>
+								<first>F:\Desktop\PRJ\current_lenet\current_conv_hls_pynq_prj</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -1324,7 +1324,7 @@
 											<first>current_conv/current_conv.cpp</first>
 											<second>load_weight</second>
 										</first>
-										<second>71</second>
+										<second>74</second>
 									</item>
 								</second>
 							</item>

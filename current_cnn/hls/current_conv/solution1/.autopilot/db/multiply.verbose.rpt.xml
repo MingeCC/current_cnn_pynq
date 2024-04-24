@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vivado HLS Report for 'multiply'" level="0">
-<item name = "Date">Sun Apr  7 13:15:19 2024
+<item name = "Date">Wed Apr 24 21:45:32 2024
 </item>
 <item name = "Version">2018.3 (Build 2405991 on Thu Dec 06 23:56:15 MST 2018)</item>
 <item name = "Project">current_conv</item>
@@ -62,8 +62,8 @@
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="1">
 <keys size="6">Instance, Module, BRAM_18K, DSP48E, FF, LUT</keys>
-<column name="conv_fadd_32ns_32bkb_U18">conv_fadd_32ns_32bkb, 0, 2, 177, 385</column>
-<column name="conv_fmul_32ns_32cud_U19">conv_fmul_32ns_32cud, 0, 3, 128, 320</column>
+<column name="conv_fadd_32ns_32bkb_U20">conv_fadd_32ns_32bkb, 0, 2, 177, 385</column>
+<column name="conv_fmul_32ns_32cud_U21">conv_fmul_32ns_32cud, 0, 3, 128, 320</column>
 </table>
 </item>
 <item name = "DSP48"><table name="" hasTotal="0">

@@ -13,7 +13,8 @@ typedef float data_t;
 void conv(int chin, int chout, int kx, int ky, int win, int hin, int stride, int padding,
           data_t feature_in[], data_t weight[], data_t feature_out[], data_t bias[]);
 data_t multiply(data_t feature_buffer[], data_t weight_buffer[], int chin, int kx, int ky);
-void load_feature(data_t feature_in[], data_t feature_buffer[], int chin, int kx, int ky, int win,int hin, int x, int y);
+void load_feature(data_t feature_in[], data_t feature_buffer[], int chin, int kx, int ky,
+		int win,int hin,int stride, int padding,int x, int y);
 void load_weight(data_t weight[],data_t weight_buffer[], int chin, int kx, int ky);
 
 #include <iostream>
@@ -21,24 +22,28 @@ void load_weight(data_t weight[],data_t weight_buffer[], int chin, int kx, int k
 int main() {
     const int chin = 1;
     const int chout = 1;
-    const int kx = 2;
-    const int ky = 2;
-    const int win = 2;
-    const int hin = 2;
+    const int kx = 3;
+    const int ky = 3;
+    const int win = 5;
+    const int hin = 5;
     const int stride = 1;
-    const int padding = 0;
+    const int padding = 1;
 
     data_t feature_in[chin * win * hin]={
 
-    		1,1,
-			1,1
+					1,1,1,1,1,
+					1,1,1,1,1,
+					1,1,1,1,1,
+					1,1,1,1,1,
+					1,1,1,1,1
 
 
     };
     data_t weight[chout * chin * kx * ky]={
 
-    			1,1,
-				1,1
+    			1,1,1,
+				1,1,1,
+				1,1,1,
 
     };
 
@@ -46,7 +51,7 @@ int main() {
 
 
     data_t feature_out[chout * ((hin - ky + 2 * padding) / stride + 1) * ((win - kx + 2 * padding) / stride + 1)];
-    data_t bias[chout]={0};
+    data_t bias[chout]={1};
 
 
     // 初始化 feature_in, weight, bias 等数组

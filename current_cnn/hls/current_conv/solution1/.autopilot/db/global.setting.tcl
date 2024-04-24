@@ -42,7 +42,7 @@ set SCTraceOption all
 set TargetInfo xc7z020:clg400:-1
 set SourceFiles {sc {} c ../current_conv.cpp}
 set SourceFlags {sc {} c {{}}}
-set DirectiveFile F:/Desktop/HLS_study/current/current_conv/solution1/solution1.directive
+set DirectiveFile F:/Desktop/PRJ/current_lenet/current_conv_hls_pynq_prj/current_conv/solution1/solution1.directive
 set TBFiles {verilog ../main.cpp bc ../main.cpp vhdl ../main.cpp sc ../main.cpp cas ../main.cpp c {}}
 set SpecLanguage C
 set TVInFiles {bc {} c {} sc {} cas {} vhdl {} verilog {}}

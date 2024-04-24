@@ -175,7 +175,7 @@ conv_fadd_32ns_32bkb #(
     .din0_WIDTH( 32 ),
     .din1_WIDTH( 32 ),
     .dout_WIDTH( 32 ))
-conv_fadd_32ns_32bkb_U18(
+conv_fadd_32ns_32bkb_U20(
     .din0(sum_2_reg_154),
     .din1(tmp_9_fu_193_p2),
     .dout(sum_fu_188_p2)
@@ -187,7 +187,7 @@ conv_fmul_32ns_32cud #(
     .din0_WIDTH( 32 ),
     .din1_WIDTH( 32 ),
     .dout_WIDTH( 32 ))
-conv_fmul_32ns_32cud_U19(
+conv_fmul_32ns_32cud_U21(
     .din0(feature_buffer_q0),
     .din1(weight_buffer_q0),
     .dout(tmp_9_fu_193_p2)

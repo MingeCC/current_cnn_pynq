@@ -29,42 +29,42 @@
 		<link>
 			<name>source</name>
 			<type>2</type>
-			<location>F:/Desktop/HLS_study/current/current_conv/.apc/.src</location>
+			<location>F:/Desktop/PRJ/current_lenet/current_conv_hls_pynq_prj/current_conv/.apc/.src</location>
 		</link>
 		<link>
 			<name>testbench</name>
 			<type>2</type>
-			<location>F:/Desktop/HLS_study/current/current_conv/.apc/.tb</location>
+			<location>F:/Desktop/PRJ/current_lenet/current_conv_hls_pynq_prj/current_conv/.apc/.tb</location>
 		</link>
 		<link>
 			<name>solution1/constraints</name>
 			<type>2</type>
-			<location>F:/Desktop/HLS_study/current/current_conv/solution1/.tcls</location>
+			<location>F:/Desktop/PRJ/current_lenet/current_conv_hls_pynq_prj/current_conv/solution1/.tcls</location>
 		</link>
 		<link>
 			<name>source/current_conv.cpp</name>
 			<type>1</type>
-			<location>F:/Desktop/HLS_study/current/current_conv/current_conv.cpp</location>
+			<location>F:/Desktop/PRJ/current_lenet/current_conv_hls_pynq_prj/current_conv/current_conv.cpp</location>
 		</link>
 		<link>
 			<name>testbench/main.cpp</name>
 			<type>1</type>
-			<location>F:/Desktop/HLS_study/current/current_conv/main.cpp</location>
+			<location>F:/Desktop/PRJ/current_lenet/current_conv_hls_pynq_prj/current_conv/main.cpp</location>
 		</link>
 		<link>
 			<name>solution1/constraints/.xml.directive</name>
 			<type>1</type>
-			<location>F:/Desktop/HLS_study/current/current_conv/solution1/solution1.directive</location>
+			<location>F:/Desktop/PRJ/current_lenet/current_conv_hls_pynq_prj/current_conv/solution1/solution1.directive</location>
 		</link>
 		<link>
 			<name>solution1/constraints/directives.tcl</name>
 			<type>1</type>
-			<location>F:/Desktop/HLS_study/current/current_conv/solution1/directives.tcl</location>
+			<location>F:/Desktop/PRJ/current_lenet/current_conv_hls_pynq_prj/current_conv/solution1/directives.tcl</location>
 		</link>
 		<link>
 			<name>solution1/constraints/script.tcl</name>
 			<type>1</type>
-			<location>F:/Desktop/HLS_study/current/current_conv/solution1/script.tcl</location>
+			<location>F:/Desktop/PRJ/current_lenet/current_conv_hls_pynq_prj/current_conv/solution1/script.tcl</location>
 		</link>
 	</linkedResources>
 </projectDescription>

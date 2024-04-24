@@ -135,14 +135,14 @@ eval "cg_default_interface_gen_dc { \
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
     id 9 \
-    name x \
+    name stride \
     type other \
     dir I \
     reset_level 1 \
     sync_rst true \
-    corename dc_x \
+    corename dc_stride \
     op interface \
-    ports { x { I 32 vector } } \
+    ports { stride { I 32 vector } } \
 } "
 }
 
@@ -150,6 +150,36 @@ eval "cg_default_interface_gen_dc { \
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
     id 10 \
+    name padding \
+    type other \
+    dir I \
+    reset_level 1 \
+    sync_rst true \
+    corename dc_padding \
+    op interface \
+    ports { padding { I 32 vector } } \
+} "
+}
+
+# Direct connection:
+if {${::AESL::PGuard_autoexp_gen}} {
+eval "cg_default_interface_gen_dc { \
+    id 11 \
+    name x \
+    type other \
+    dir I \
+    reset_level 1 \
+    sync_rst true \
+    corename dc_x \
+    op interface \
+    ports { x { I 31 vector } } \
+} "
+}
+
+# Direct connection:
+if {${::AESL::PGuard_autoexp_gen}} {
+eval "cg_default_interface_gen_dc { \
+    id 12 \
     name y \
     type other \
     dir I \
@@ -157,7 +187,7 @@ eval "cg_default_interface_gen_dc { \
     sync_rst true \
     corename dc_y \
     op interface \
-    ports { y { I 32 vector } } \
+    ports { y { I 31 vector } } \
 } "
 }
 

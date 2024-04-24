@@ -44,8 +44,8 @@ struct multiply : public sc_module {
 
     sc_trace_file* mVcdFile;
 
-    conv_fadd_32ns_32bkb<1,1,32,32,32>* conv_fadd_32ns_32bkb_U18;
-    conv_fmul_32ns_32cud<1,1,32,32,32>* conv_fmul_32ns_32cud_U19;
+    conv_fadd_32ns_32bkb<1,1,32,32,32>* conv_fadd_32ns_32bkb_U20;
+    conv_fmul_32ns_32cud<1,1,32,32,32>* conv_fmul_32ns_32cud_U21;
     sc_signal< sc_lv<3> > ap_CS_fsm;
     sc_signal< sc_logic > ap_CS_fsm_state1;
     sc_signal< sc_lv<96> > indvar_flatten1_reg_88;

@@ -11,14 +11,15 @@ typedef float data_t;
 #define MAX_CHIN 256
 
 // 用于加载输入特征图和权重的函数
-void load_feature(data_t feature_in[], data_t feature_buffer[], int chin, int kx, int ky, int win,int hin, int x, int y)
+void load_feature(data_t feature_in[], data_t feature_buffer[], int chin, int kx, int ky,
+		int win,int hin,int stride, int padding, int x, int y)
 {
+
+// 	修改接口stride、padding
 //#pragma HLS INTERFACE m_axi depth=99999999 port=feature_in
 //#pragma HLS INTERFACE m_axi depth=99999999 port=feature_buffer
 
     int index = 0;
-    int stride = 1;
-    int padding = 0;
     for (int c = 0; c < chin; c++) {
 #pragma HLS LOOP_TRIPCOUNT min=10 max=10 avg=10
 
@@ -29,12 +30,14 @@ void load_feature(data_t feature_in[], data_t feature_buffer[], int chin, int kx
 #pragma HLS LOOP_TRIPCOUNT min=3 max=3 avg=3
 #pragma HLS PIPELINE II=1
 
+            	// x和 y为输出特征的坐标；xi和yi为该输出特征坐标对应的输入特征的坐标
                 int xi = x * stride + j - padding;
                 int yi = y * stride + i - padding;
+                // 判断坐标是否出界（检测边沿）
                 if (xi >= 0 && xi < win && yi >= 0 && yi < hin) {
                     feature_buffer[index] = feature_in[c * win * hin + yi * win + xi];
                 } else {
-                    feature_buffer[index] = 0; // 处理边界和填充
+                    feature_buffer[index] = 0; // 出边界则填充0
                 }
                 index++;
             }
@@ -125,7 +128,6 @@ void conv(int chin, int chout, int kx, int ky, int win, int hin, int stride, int
     data_t feature_buffer[MAX_KX * MAX_KY * MAX_CHIN];
     data_t weight_buffer[MAX_KX * MAX_KY * MAX_CHIN];
 
-
 loop_chout:for (int cout = 0; cout < chout; cout++) {
 		#pragma HLS LOOP_TRIPCOUNT min=10 max=10 avg=10
 
@@ -137,7 +139,7 @@ loop_chout:for (int cout = 0; cout < chout; cout++) {
 #pragma HLS LOOP_TRIPCOUNT min=5 max=5 avg=5
 
                 // 加载对应的特征图和权重
-                load_feature(feature_in, feature_buffer, chin, kx, ky, win,hin, w * stride - padding, h * stride - padding);
+                load_feature(feature_in, feature_buffer, chin, kx, ky, win,hin,stride, padding, w , h);
                 load_weight(&weight[cout * chin * kx * ky],weight_buffer,chin, kx, ky);
                 // 使用multiply函数计算卷积
                 data_t conv_sum =multiply(feature_buffer, weight_buffer, chin, kx, ky);

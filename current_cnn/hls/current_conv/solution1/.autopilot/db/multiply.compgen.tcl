@@ -1,6 +1,6 @@
 # This script segment is generated automatically by AutoPilot
 
-set id 18
+set id 20
 set name conv_fadd_32ns_32bkb
 set corename simcore_fadd
 set op fadd
@@ -73,7 +73,7 @@ puts "@W \[IMPL-101\] Cannot find ::AESL_LIB_XILINX_FPV6::fpv6_gen, check your p
 }
 
 
-set id 19
+set id 21
 set name conv_fmul_32ns_32cud
 set corename simcore_fmul
 set op fmul
@@ -157,7 +157,7 @@ if {${::AESL::PGuard_autoexp_gen}} {
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 22 \
+    id 24 \
     name feature_buffer \
     reset_level 1 \
     sync_rst true \
@@ -176,7 +176,7 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 23 \
+    id 25 \
     name weight_buffer \
     reset_level 1 \
     sync_rst true \
@@ -194,7 +194,7 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 24 \
+    id 26 \
     name chin \
     type other \
     dir I \
@@ -209,7 +209,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 25 \
+    id 27 \
     name kx \
     type other \
     dir I \
@@ -224,7 +224,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 26 \
+    id 28 \
     name ky \
     type other \
     dir I \

@@ -1,4 +1,4 @@
-INFO-FLOW: Workspace F:/Desktop/HLS_study/current/current_conv/solution1 opened at Sun Apr 07 13:15:13 +0800 2024
+INFO-FLOW: Workspace F:/Desktop/PRJ/current_lenet/current_conv_hls_pynq_prj/current_conv/solution1 opened at Wed Apr 24 21:45:27 +0800 2024
 Execute     config_clock -quiet -name default -period 50 -default=false 
 INFO: [SYN 201-201] Setting up clock 'default' with a period of 50ns.
 Execute     open_platform DefaultPlatform 
@@ -79,7 +79,7 @@ Execute     config_chip_info -quiet -resource  {SLICE 13300}  {LUT 53200}     {F
 Execute     config_chip_info -quiet -speed slow 
 Execute     config_export -format=ip_catalog 
 Execute     config_export -rtl=verilog 
-Command   open_solution done; 0.144 sec.
+Command   open_solution done; 0.145 sec.
 Execute   set_part xc7z020clg400-1 -tool vivado 
 Execute     add_library xilinx/zynq/zynq:xc7z020:clg400:-1 
 Execute       get_default_platform 
@@ -118,87 +118,87 @@ Execute       is_encrypted current_conv/current_conv.cpp
 Execute       get_default_platform 
 INFO-FLOW: Running: GCC PP
 INFO-FLOW: Source preprocessing
-Execute       clang  -fno-limit-debug-info -gcc-toolchain "D:/Vivado/Vivado/2018.3/msys" -hls  -fno-exceptions  -D__llvm__  -E "current_conv/current_conv.cpp"     -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -fno-threadsafe-statics  -fno-use-cxa-atexit  -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -D__cdecl= -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "D:/Vivado/Vivado/2018.3/common/technology/autopilot" -I "D:/Vivado/Vivado/2018.3/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D__DSP48E1__  -o "F:/Desktop/HLS_study/current/current_conv/solution1/.autopilot/db/current_conv.pp.0.cpp" 
-INFO-FLOW: exec D:/Vivado/Vivado/2018.3/win64/tools/clang/bin/clang -fno-limit-debug-info -gcc-toolchain D:/Vivado/Vivado/2018.3/msys -hls -fno-exceptions -D__llvm__ -E current_conv/current_conv.cpp -fno-math-errno -c -emit-llvm -O0 -mllvm -disable-llvm-optzns -fno-threadsafe-statics -fno-use-cxa-atexit -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -D__cdecl= -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I D:/Vivado/Vivado/2018.3/common/technology/autopilot -I D:/Vivado/Vivado/2018.3/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -o F:/Desktop/HLS_study/current/current_conv/solution1/.autopilot/db/current_conv.pp.0.cpp
-Command       clang done; 0.452 sec.
-Execute       tidy_31 xilinx-xfmat-array-geometry F:/Desktop/HLS_study/current/current_conv/solution1/.autopilot/db/current_conv.pp.0.cpp std=gnu++98 
-INFO-FLOW: exec D:/Vivado/Vivado/2018.3/win64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-xfmat-array-geometry -quiet -fix F:/Desktop/HLS_study/current/current_conv/solution1/.autopilot/db/current_conv.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0
-Command       tidy_31 done; 0.168 sec.
+Execute       clang  -fno-limit-debug-info -gcc-toolchain "D:/Vivado/Vivado/2018.3/msys" -hls  -fno-exceptions  -D__llvm__  -E "current_conv/current_conv.cpp"     -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -fno-threadsafe-statics  -fno-use-cxa-atexit  -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -D__cdecl= -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "D:/Vivado/Vivado/2018.3/common/technology/autopilot" -I "D:/Vivado/Vivado/2018.3/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D__DSP48E1__  -o "F:/Desktop/PRJ/current_lenet/current_conv_hls_pynq_prj/current_conv/solution1/.autopilot/db/current_conv.pp.0.cpp" 
+INFO-FLOW: exec D:/Vivado/Vivado/2018.3/win64/tools/clang/bin/clang -fno-limit-debug-info -gcc-toolchain D:/Vivado/Vivado/2018.3/msys -hls -fno-exceptions -D__llvm__ -E current_conv/current_conv.cpp -fno-math-errno -c -emit-llvm -O0 -mllvm -disable-llvm-optzns -fno-threadsafe-statics -fno-use-cxa-atexit -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -D__cdecl= -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I D:/Vivado/Vivado/2018.3/common/technology/autopilot -I D:/Vivado/Vivado/2018.3/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -o F:/Desktop/PRJ/current_lenet/current_conv_hls_pynq_prj/current_conv/solution1/.autopilot/db/current_conv.pp.0.cpp
+Command       clang done; 0.434 sec.
+Execute       tidy_31 xilinx-xfmat-array-geometry F:/Desktop/PRJ/current_lenet/current_conv_hls_pynq_prj/current_conv/solution1/.autopilot/db/current_conv.pp.0.cpp std=gnu++98 
+INFO-FLOW: exec D:/Vivado/Vivado/2018.3/win64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-xfmat-array-geometry -quiet -fix F:/Desktop/PRJ/current_lenet/current_conv_hls_pynq_prj/current_conv/solution1/.autopilot/db/current_conv.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0
+Command       tidy_31 done; 0.164 sec.
 INFO-FLOW: Syntax Checking before pre-processing...
-Execute       clang -syntaxcheck -src F:/Desktop/HLS_study/current/current_conv/solution1/.autopilot/db/current_conv.pp.0.cpp  -fno-limit-debug-info -gcc-toolchain "D:/Vivado/Vivado/2018.3/msys" -hls    -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -fno-threadsafe-statics  -fno-use-cxa-atexit  -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -D__cdecl= -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "D:/Vivado/Vivado/2018.3/common/technology/autopilot" -I "D:/Vivado/Vivado/2018.3/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D__DSP48E1__  "F:/Desktop/HLS_study/current/current_conv/solution1/.autopilot/db/current_conv.pp.0.cpp"  -o "F:/Desktop/HLS_study/current/current_conv/solution1/.autopilot/db/useless.bc"  
-INFO-FLOW: exec D:/Vivado/Vivado/2018.3/win64/tools/clang/bin/clang -fno-limit-debug-info -gcc-toolchain D:/Vivado/Vivado/2018.3/msys -hls -fno-math-errno -c -emit-llvm -O0 -mllvm -disable-llvm-optzns -fno-threadsafe-statics -fno-use-cxa-atexit -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -D__cdecl= -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I D:/Vivado/Vivado/2018.3/common/technology/autopilot -I D:/Vivado/Vivado/2018.3/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ F:/Desktop/HLS_study/current/current_conv/solution1/.autopilot/db/current_conv.pp.0.cpp -o F:/Desktop/HLS_study/current/current_conv/solution1/.autopilot/db/useless.bc
-Command       clang done; 0.573 sec.
-INFO-FLOW: Done: GCC PP time: 1.2 seconds per iteration
+Execute       clang -syntaxcheck -src F:/Desktop/PRJ/current_lenet/current_conv_hls_pynq_prj/current_conv/solution1/.autopilot/db/current_conv.pp.0.cpp  -fno-limit-debug-info -gcc-toolchain "D:/Vivado/Vivado/2018.3/msys" -hls    -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -fno-threadsafe-statics  -fno-use-cxa-atexit  -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -D__cdecl= -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "D:/Vivado/Vivado/2018.3/common/technology/autopilot" -I "D:/Vivado/Vivado/2018.3/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D__DSP48E1__  "F:/Desktop/PRJ/current_lenet/current_conv_hls_pynq_prj/current_conv/solution1/.autopilot/db/current_conv.pp.0.cpp"  -o "F:/Desktop/PRJ/current_lenet/current_conv_hls_pynq_prj/current_conv/solution1/.autopilot/db/useless.bc"  
+INFO-FLOW: exec D:/Vivado/Vivado/2018.3/win64/tools/clang/bin/clang -fno-limit-debug-info -gcc-toolchain D:/Vivado/Vivado/2018.3/msys -hls -fno-math-errno -c -emit-llvm -O0 -mllvm -disable-llvm-optzns -fno-threadsafe-statics -fno-use-cxa-atexit -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -D__cdecl= -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I D:/Vivado/Vivado/2018.3/common/technology/autopilot -I D:/Vivado/Vivado/2018.3/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ F:/Desktop/PRJ/current_lenet/current_conv_hls_pynq_prj/current_conv/solution1/.autopilot/db/current_conv.pp.0.cpp -o F:/Desktop/PRJ/current_lenet/current_conv_hls_pynq_prj/current_conv/solution1/.autopilot/db/useless.bc
+Command       clang done; 0.523 sec.
+INFO-FLOW: Done: GCC PP time: 1.1 seconds per iteration
 Execute       list_core -type functional_unit 
-Execute       tidy_31 xilinx-systemc-detector F:/Desktop/HLS_study/current/current_conv/solution1/.autopilot/db/current_conv.pp.0.cpp std=gnu++98 -directive=F:/Desktop/HLS_study/current/current_conv/solution1/.autopilot/db/.systemc_flag 
-INFO-FLOW: exec D:/Vivado/Vivado/2018.3/win64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-systemc-detector -import-directive=F:/Desktop/HLS_study/current/current_conv/solution1/.autopilot/db/.systemc_flag -quiet -fix-errors F:/Desktop/HLS_study/current/current_conv/solution1/.autopilot/db/current_conv.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0
-Command       tidy_31 done; 0.156 sec.
+Execute       tidy_31 xilinx-systemc-detector F:/Desktop/PRJ/current_lenet/current_conv_hls_pynq_prj/current_conv/solution1/.autopilot/db/current_conv.pp.0.cpp std=gnu++98 -directive=F:/Desktop/PRJ/current_lenet/current_conv_hls_pynq_prj/current_conv/solution1/.autopilot/db/.systemc_flag 
+INFO-FLOW: exec D:/Vivado/Vivado/2018.3/win64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-systemc-detector -import-directive=F:/Desktop/PRJ/current_lenet/current_conv_hls_pynq_prj/current_conv/solution1/.autopilot/db/.systemc_flag -quiet -fix-errors F:/Desktop/PRJ/current_lenet/current_conv_hls_pynq_prj/current_conv/solution1/.autopilot/db/current_conv.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0
+Command       tidy_31 done; 0.149 sec.
 INFO-FLOW: Running: tidy-3.1 CDT preprocess
-Execute       tidy_31 xilinx-directive2pragma F:/Desktop/HLS_study/current/current_conv/solution1/.autopilot/db/current_conv.pp.0.cpp std=gnu++98 -directive=F:/Desktop/HLS_study/current/current_conv/solution1/.autopilot/db/all.directive.json 
-INFO-FLOW: exec D:/Vivado/Vivado/2018.3/win64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-directive2pragma -import-directive=F:/Desktop/HLS_study/current/current_conv/solution1/.autopilot/db/all.directive.json -quiet -fix-errors F:/Desktop/HLS_study/current/current_conv/solution1/.autopilot/db/current_conv.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0
-Command       tidy_31 done; 0.144 sec.
+Execute       tidy_31 xilinx-directive2pragma F:/Desktop/PRJ/current_lenet/current_conv_hls_pynq_prj/current_conv/solution1/.autopilot/db/current_conv.pp.0.cpp std=gnu++98 -directive=F:/Desktop/PRJ/current_lenet/current_conv_hls_pynq_prj/current_conv/solution1/.autopilot/db/all.directive.json 
+INFO-FLOW: exec D:/Vivado/Vivado/2018.3/win64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-directive2pragma -import-directive=F:/Desktop/PRJ/current_lenet/current_conv_hls_pynq_prj/current_conv/solution1/.autopilot/db/all.directive.json -quiet -fix-errors F:/Desktop/PRJ/current_lenet/current_conv_hls_pynq_prj/current_conv/solution1/.autopilot/db/current_conv.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0
+Command       tidy_31 done; 0.157 sec.
 Execute       get_config_dataflow -strict_mode 
-Execute       ap_eval exec -ignorestderr D:/Vivado/Vivado/2018.3/win64/tools/clang-3.9-csynth/bin/xilinx-dataflow-lawyer -export-fixes=F:/Desktop/HLS_study/current/current_conv/solution1/.autopilot/db/xilinx-dataflow-lawyer.current_conv.pp.0.cpp.diag.yml F:/Desktop/HLS_study/current/current_conv/solution1/.autopilot/db/current_conv.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0 -fstrict-dataflow > F:/Desktop/HLS_study/current/current_conv/solution1/.autopilot/db/xilinx-dataflow-lawyer.current_conv.pp.0.cpp.out.log 2> F:/Desktop/HLS_study/current/current_conv/solution1/.autopilot/db/xilinx-dataflow-lawyer.current_conv.pp.0.cpp.err.log 
-Command       ap_eval done; 0.17 sec.
-Execute       tidy_31 -errorcheck xilinx-constantarray-param,xilinx-resource-pragma-transformer,xilinx-xfmat-array-geometry F:/Desktop/HLS_study/current/current_conv/solution1/.autopilot/db/current_conv.pp.0.cpp std=gnu++98 
-Execute         ap_eval exec -ignorestderr D:/Vivado/Vivado/2018.3/win64/tools/clang-3.9-csynth/bin/tidy-3.1 -export-fixes=F:/Desktop/HLS_study/current/current_conv/solution1/.autopilot/db/tidy-3.1.current_conv.pp.0.cpp.diag.yml -header-filter=.* -checks=-*,xilinx-constantarray-param,xilinx-resource-pragma-transformer,xilinx-xfmat-array-geometry -quiet -fix-errors F:/Desktop/HLS_study/current/current_conv/solution1/.autopilot/db/current_conv.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0 > F:/Desktop/HLS_study/current/current_conv/solution1/.autopilot/db/tidy-3.1.current_conv.pp.0.cpp.out.log 2> F:/Desktop/HLS_study/current/current_conv/solution1/.autopilot/db/tidy-3.1.current_conv.pp.0.cpp.err.log 
-Command         ap_eval done; 0.199 sec.
-Execute         ap_eval exec -ignorestderr D:/Vivado/Vivado/2018.3/win64/tools/clang-3.9-csynth/bin/xilinx-legacy-rewriter F:/Desktop/HLS_study/current/current_conv/solution1/.autopilot/db/current_conv.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0 > F:/Desktop/HLS_study/current/current_conv/solution1/.autopilot/db/xilinx-legacy-rewriter.current_conv.pp.0.cpp.out.log 2> F:/Desktop/HLS_study/current/current_conv/solution1/.autopilot/db/xilinx-legacy-rewriter.current_conv.pp.0.cpp.err.log 
-Command         ap_eval done; 0.185 sec.
-Command       tidy_31 done; 0.387 sec.
+Execute       ap_eval exec -ignorestderr D:/Vivado/Vivado/2018.3/win64/tools/clang-3.9-csynth/bin/xilinx-dataflow-lawyer -export-fixes=F:/Desktop/PRJ/current_lenet/current_conv_hls_pynq_prj/current_conv/solution1/.autopilot/db/xilinx-dataflow-lawyer.current_conv.pp.0.cpp.diag.yml F:/Desktop/PRJ/current_lenet/current_conv_hls_pynq_prj/current_conv/solution1/.autopilot/db/current_conv.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0 -fstrict-dataflow > F:/Desktop/PRJ/current_lenet/current_conv_hls_pynq_prj/current_conv/solution1/.autopilot/db/xilinx-dataflow-lawyer.current_conv.pp.0.cpp.out.log 2> F:/Desktop/PRJ/current_lenet/current_conv_hls_pynq_prj/current_conv/solution1/.autopilot/db/xilinx-dataflow-lawyer.current_conv.pp.0.cpp.err.log 
+Command       ap_eval done; 0.175 sec.
+Execute       tidy_31 -errorcheck xilinx-constantarray-param,xilinx-resource-pragma-transformer,xilinx-xfmat-array-geometry F:/Desktop/PRJ/current_lenet/current_conv_hls_pynq_prj/current_conv/solution1/.autopilot/db/current_conv.pp.0.cpp std=gnu++98 
+Execute         ap_eval exec -ignorestderr D:/Vivado/Vivado/2018.3/win64/tools/clang-3.9-csynth/bin/tidy-3.1 -export-fixes=F:/Desktop/PRJ/current_lenet/current_conv_hls_pynq_prj/current_conv/solution1/.autopilot/db/tidy-3.1.current_conv.pp.0.cpp.diag.yml -header-filter=.* -checks=-*,xilinx-constantarray-param,xilinx-resource-pragma-transformer,xilinx-xfmat-array-geometry -quiet -fix-errors F:/Desktop/PRJ/current_lenet/current_conv_hls_pynq_prj/current_conv/solution1/.autopilot/db/current_conv.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0 > F:/Desktop/PRJ/current_lenet/current_conv_hls_pynq_prj/current_conv/solution1/.autopilot/db/tidy-3.1.current_conv.pp.0.cpp.out.log 2> F:/Desktop/PRJ/current_lenet/current_conv_hls_pynq_prj/current_conv/solution1/.autopilot/db/tidy-3.1.current_conv.pp.0.cpp.err.log 
+Command         ap_eval done; 0.197 sec.
+Execute         ap_eval exec -ignorestderr D:/Vivado/Vivado/2018.3/win64/tools/clang-3.9-csynth/bin/xilinx-legacy-rewriter F:/Desktop/PRJ/current_lenet/current_conv_hls_pynq_prj/current_conv/solution1/.autopilot/db/current_conv.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0 > F:/Desktop/PRJ/current_lenet/current_conv_hls_pynq_prj/current_conv/solution1/.autopilot/db/xilinx-legacy-rewriter.current_conv.pp.0.cpp.out.log 2> F:/Desktop/PRJ/current_lenet/current_conv_hls_pynq_prj/current_conv/solution1/.autopilot/db/xilinx-legacy-rewriter.current_conv.pp.0.cpp.err.log 
+Command         ap_eval done; 0.184 sec.
+Command       tidy_31 done; 0.383 sec.
 INFO-FLOW: Done: tidy-3.1 CDT preprocess time: 0.7 seconds per iteration
 INFO-FLOW: Pragma Handling...
-Execute       tidy_31 xilinx-ssdm-intrinsics-arguments F:/Desktop/HLS_study/current/current_conv/solution1/.autopilot/db/current_conv.pragma.1.cpp std=gnu++98 
-INFO-FLOW: exec D:/Vivado/Vivado/2018.3/win64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-ssdm-intrinsics-arguments -quiet -fix-errors F:/Desktop/HLS_study/current/current_conv/solution1/.autopilot/db/current_conv.pragma.1.cpp -- -std=gnu++98 -fhls -ferror-limit=0
-Command       tidy_31 done; 0.456 sec.
+Execute       tidy_31 xilinx-ssdm-intrinsics-arguments F:/Desktop/PRJ/current_lenet/current_conv_hls_pynq_prj/current_conv/solution1/.autopilot/db/current_conv.pragma.1.cpp std=gnu++98 
+INFO-FLOW: exec D:/Vivado/Vivado/2018.3/win64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-ssdm-intrinsics-arguments -quiet -fix-errors F:/Desktop/PRJ/current_lenet/current_conv_hls_pynq_prj/current_conv/solution1/.autopilot/db/current_conv.pragma.1.cpp -- -std=gnu++98 -fhls -ferror-limit=0
+Command       tidy_31 done; 0.441 sec.
 Execute       get_default_platform 
 INFO-FLOW: Processing labels
-Execute       clang -src F:/Desktop/HLS_study/current/current_conv/solution1/.autopilot/db/current_conv.pragma.2.cpp  -fno-limit-debug-info -gcc-toolchain D:/Vivado/Vivado/2018.3/msys -hls -hls-analyze-label -hls-analyze-pragma -fno-exceptions  -D__llvm__  -w  "F:/Desktop/HLS_study/current/current_conv/solution1/.autopilot/db/current_conv.pragma.2.cpp"    -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -fno-threadsafe-statics  -fno-use-cxa-atexit -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "D:/Vivado/Vivado/2018.3/common/technology/autopilot" -I "D:/Vivado/Vivado/2018.3/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -g -o "F:/Desktop/HLS_study/current/current_conv/solution1/.autopilot/db/current_conv.bc" 
-INFO-FLOW: exec D:/Vivado/Vivado/2018.3/win64/tools/clang/bin/clang -fno-limit-debug-info -gcc-toolchain D:/Vivado/Vivado/2018.3/msys -hls -hls-analyze-label -hls-analyze-pragma -fno-exceptions -D__llvm__ -w F:/Desktop/HLS_study/current/current_conv/solution1/.autopilot/db/current_conv.pragma.2.cpp -fno-math-errno -c -emit-llvm -O0 -mllvm -disable-llvm-optzns -fno-threadsafe-statics -fno-use-cxa-atexit -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I D:/Vivado/Vivado/2018.3/common/technology/autopilot -I D:/Vivado/Vivado/2018.3/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -g -o F:/Desktop/HLS_study/current/current_conv/solution1/.autopilot/db/current_conv.bc
-Command       clang done; 0.542 sec.
+Execute       clang -src F:/Desktop/PRJ/current_lenet/current_conv_hls_pynq_prj/current_conv/solution1/.autopilot/db/current_conv.pragma.2.cpp  -fno-limit-debug-info -gcc-toolchain D:/Vivado/Vivado/2018.3/msys -hls -hls-analyze-label -hls-analyze-pragma -fno-exceptions  -D__llvm__  -w  "F:/Desktop/PRJ/current_lenet/current_conv_hls_pynq_prj/current_conv/solution1/.autopilot/db/current_conv.pragma.2.cpp"    -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -fno-threadsafe-statics  -fno-use-cxa-atexit -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "D:/Vivado/Vivado/2018.3/common/technology/autopilot" -I "D:/Vivado/Vivado/2018.3/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -g -o "F:/Desktop/PRJ/current_lenet/current_conv_hls_pynq_prj/current_conv/solution1/.autopilot/db/current_conv.bc" 
+INFO-FLOW: exec D:/Vivado/Vivado/2018.3/win64/tools/clang/bin/clang -fno-limit-debug-info -gcc-toolchain D:/Vivado/Vivado/2018.3/msys -hls -hls-analyze-label -hls-analyze-pragma -fno-exceptions -D__llvm__ -w F:/Desktop/PRJ/current_lenet/current_conv_hls_pynq_prj/current_conv/solution1/.autopilot/db/current_conv.pragma.2.cpp -fno-math-errno -c -emit-llvm -O0 -mllvm -disable-llvm-optzns -fno-threadsafe-statics -fno-use-cxa-atexit -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I D:/Vivado/Vivado/2018.3/common/technology/autopilot -I D:/Vivado/Vivado/2018.3/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -g -o F:/Desktop/PRJ/current_lenet/current_conv_hls_pynq_prj/current_conv/solution1/.autopilot/db/current_conv.bc
+Command       clang done; 0.52 sec.
 INFO-FLOW: Linking Debug ...
-Execute       llvm-ld F:/Desktop/HLS_study/current/current_conv/solution1/.autopilot/db/current_conv.g.bc -hls-opt -except-internalize conv -LD:/Vivado/Vivado/2018.3/win64/lib -lhlsm -lhlsmc++ -o F:/Desktop/HLS_study/current/current_conv/solution1/.autopilot/db/a.g 
-Command       llvm-ld done; 0.434 sec.
-INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:00 ; elapsed = 00:00:04 . Memory (MB): peak = 102.738 ; gain = 18.000
-INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:00 ; elapsed = 00:00:04 . Memory (MB): peak = 102.738 ; gain = 18.000
+Execute       llvm-ld F:/Desktop/PRJ/current_lenet/current_conv_hls_pynq_prj/current_conv/solution1/.autopilot/db/current_conv.g.bc -hls-opt -except-internalize conv -LD:/Vivado/Vivado/2018.3/win64/lib -lhlsm -lhlsmc++ -o F:/Desktop/PRJ/current_lenet/current_conv_hls_pynq_prj/current_conv/solution1/.autopilot/db/a.g 
+Command       llvm-ld done; 0.428 sec.
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:00 ; elapsed = 00:00:04 . Memory (MB): peak = 102.480 ; gain = 17.375
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:00 ; elapsed = 00:00:04 . Memory (MB): peak = 102.707 ; gain = 17.602
 Execute       get_config_sdx -target 
 Execute       opt_and_import_c a -opt_level=2 -skip_syncheck=0 -ng=0 -keep_printf=0 
 Execute         cleanup_all_models 
 INFO: [HLS 200-10] Starting code transformations ...
-Execute         transform -promote-dbg-pointer F:/Desktop/HLS_study/current/current_conv/solution1/.autopilot/db/a.pp.bc -o F:/Desktop/HLS_study/current/current_conv/solution1/.autopilot/db/a.pp.0.bc -f 
-Execute         llvm-ld F:/Desktop/HLS_study/current/current_conv/solution1/.autopilot/db/a.pp.0.bc -disable-opt -LD:/Vivado/Vivado/2018.3/win64/lib -lfloatconversion -o F:/Desktop/HLS_study/current/current_conv/solution1/.autopilot/db/a.g.0 
-Command         llvm-ld done; 0.22 sec.
+Execute         transform -promote-dbg-pointer F:/Desktop/PRJ/current_lenet/current_conv_hls_pynq_prj/current_conv/solution1/.autopilot/db/a.pp.bc -o F:/Desktop/PRJ/current_lenet/current_conv_hls_pynq_prj/current_conv/solution1/.autopilot/db/a.pp.0.bc -f 
+Execute         llvm-ld F:/Desktop/PRJ/current_lenet/current_conv_hls_pynq_prj/current_conv/solution1/.autopilot/db/a.pp.0.bc -disable-opt -LD:/Vivado/Vivado/2018.3/win64/lib -lfloatconversion -o F:/Desktop/PRJ/current_lenet/current_conv_hls_pynq_prj/current_conv/solution1/.autopilot/db/a.g.0 
+Command         llvm-ld done; 0.215 sec.
 INFO-FLOW: Running Standard Transforms...
-Execute         transform -hls -share-std-xform -demangle-name -inline-byval-memcpy -always-inline -promote-dbg-pointer -interface-preproc -mem2reg -lower-blackbox -scalarrepl -mem2reg -keep-read-access -instcombine -dce -promote-dbg-pointer -bitop-raise -loop-simplify -indvarspre -indvars -loop-simplify -xunroll -constprop -instcombine -simplifycfg -indvars -simplifycfg -dce -globaldce -basicaa -simplifycfg -mem2reg -globalopt -global-constprop -deadargelim -instcombine -simplifycfg -prune-eh -simplifycfg -scalarrepl -instcombine -reassociate -licm -simplifycfg -loop-simplify -indvars -instcombine -simplifycfg -mem2reg -loop-simplify -indvars -instcombine -gvn -gvn -instcombine -adce -break-crit-edges -simplifycfg -loop-delete -global-array-opt -dce -dse -adce -find-syn-modules -top conv -deadargelim -mem2reg -instcombine -dce -presyn-prepare -auto-rom-infer -interface-preproc -syn-check -check-rec-only -find-region -simplifycfg -func-extr -function-inline -globaldce -mem2reg -instcombine -dce -gvn -globaldce -adce -adse -constprop -instcombine -bit-constprop -instcombine -dce -simplifycfg -bitop-raise -simplifycfg -dce -loop-delete -reassociate -globalopt -global-privatize -mem2reg -dce -global-constprop -pointer-simplify -constprop -dce -func-inst -deadargelim -auto-shift-reg-idiom -promote-dbg-pointer -norm-name F:/Desktop/HLS_study/current/current_conv/solution1/.autopilot/db/a.g.0.bc -o F:/Desktop/HLS_study/current/current_conv/solution1/.autopilot/db/a.g.1.bc -f -phase std-opt 
-INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:00 ; elapsed = 00:00:04 . Memory (MB): peak = 104.145 ; gain = 19.406
+Execute         transform -hls -share-std-xform -demangle-name -inline-byval-memcpy -always-inline -promote-dbg-pointer -interface-preproc -mem2reg -lower-blackbox -scalarrepl -mem2reg -keep-read-access -instcombine -dce -promote-dbg-pointer -bitop-raise -loop-simplify -indvarspre -indvars -loop-simplify -xunroll -constprop -instcombine -simplifycfg -indvars -simplifycfg -dce -globaldce -basicaa -simplifycfg -mem2reg -globalopt -global-constprop -deadargelim -instcombine -simplifycfg -prune-eh -simplifycfg -scalarrepl -instcombine -reassociate -licm -simplifycfg -loop-simplify -indvars -instcombine -simplifycfg -mem2reg -loop-simplify -indvars -instcombine -gvn -gvn -instcombine -adce -break-crit-edges -simplifycfg -loop-delete -global-array-opt -dce -dse -adce -find-syn-modules -top conv -deadargelim -mem2reg -instcombine -dce -presyn-prepare -auto-rom-infer -interface-preproc -syn-check -check-rec-only -find-region -simplifycfg -func-extr -function-inline -globaldce -mem2reg -instcombine -dce -gvn -globaldce -adce -adse -constprop -instcombine -bit-constprop -instcombine -dce -simplifycfg -bitop-raise -simplifycfg -dce -loop-delete -reassociate -globalopt -global-privatize -mem2reg -dce -global-constprop -pointer-simplify -constprop -dce -func-inst -deadargelim -auto-shift-reg-idiom -promote-dbg-pointer -norm-name F:/Desktop/PRJ/current_lenet/current_conv_hls_pynq_prj/current_conv/solution1/.autopilot/db/a.g.0.bc -o F:/Desktop/PRJ/current_lenet/current_conv_hls_pynq_prj/current_conv/solution1/.autopilot/db/a.g.1.bc -f -phase std-opt 
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:00 ; elapsed = 00:00:04 . Memory (MB): peak = 104.199 ; gain = 19.094
 INFO: [HLS 200-10] Checking synthesizability ...
 INFO-FLOW: Checking Synthesizability 1/2..
-Execute         transform -hls -syn-check -check-rec-only -disaggr -scalarrepl -norm-name -dce -mem2reg -instcombine -function-uniquify -directive-preproc -mem2reg -dse -dce -auto-rom-infer -dce -pag -array-normalize -instcombine -dce -warn-fifo-pointer -array-seg-normalize -instcombine -dce -array-flatten -instcombine -dce -array-burst -dce -deadargelim -promote-global-argument -simplifycfg -mem2reg -globaldce -resolve-double-ptr -dce -deadargelim -dce -instcombine -function-inline -globaldce -dce -doublePtrSimplify -doublePtrElim -dce -doublePtrSimplify -promote-dbg-pointer -dce -scalarrepl -dse -adse -instcombine -ptrLegalization -simplifycfg -dce -instcombine -pointer-simplify -ptrArgReplace -dce -instcombine -disaggr -scalarrepl -norm-name -dce -mem2reg -instcombine -ptrLegalization -simplifycfg -deadargelim -instcombine -dce -inst-simplify -function-uniquify -directive-preproc -mem2reg -dse -dce -globaldce -check-dspbuiltin F:/Desktop/HLS_study/current/current_conv/solution1/.autopilot/db/a.g.1.bc -o F:/Desktop/HLS_study/current/current_conv/solution1/.autopilot/db/a.g.2.prechk.bc -f 
+Execute         transform -hls -syn-check -check-rec-only -disaggr -scalarrepl -norm-name -dce -mem2reg -instcombine -function-uniquify -directive-preproc -mem2reg -dse -dce -auto-rom-infer -dce -pag -array-normalize -instcombine -dce -warn-fifo-pointer -array-seg-normalize -instcombine -dce -array-flatten -instcombine -dce -array-burst -dce -deadargelim -promote-global-argument -simplifycfg -mem2reg -globaldce -resolve-double-ptr -dce -deadargelim -dce -instcombine -function-inline -globaldce -dce -doublePtrSimplify -doublePtrElim -dce -doublePtrSimplify -promote-dbg-pointer -dce -scalarrepl -dse -adse -instcombine -ptrLegalization -simplifycfg -dce -instcombine -pointer-simplify -ptrArgReplace -dce -instcombine -disaggr -scalarrepl -norm-name -dce -mem2reg -instcombine -ptrLegalization -simplifycfg -deadargelim -instcombine -dce -inst-simplify -function-uniquify -directive-preproc -mem2reg -dse -dce -globaldce -check-dspbuiltin F:/Desktop/PRJ/current_lenet/current_conv_hls_pynq_prj/current_conv/solution1/.autopilot/db/a.g.1.bc -o F:/Desktop/PRJ/current_lenet/current_conv_hls_pynq_prj/current_conv/solution1/.autopilot/db/a.g.2.prechk.bc -f 
 INFO-FLOW: Checking Synthesizability 2/2..
-Execute         transform -syn-check F:/Desktop/HLS_study/current/current_conv/solution1/.autopilot/db/a.g.2.prechk.bc -o F:/Desktop/HLS_study/current/current_conv/solution1/.autopilot/db/a.g.2.bc -f -phase syn-check 
-INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:00 ; elapsed = 00:00:04 . Memory (MB): peak = 104.398 ; gain = 19.660
+Execute         transform -syn-check F:/Desktop/PRJ/current_lenet/current_conv_hls_pynq_prj/current_conv/solution1/.autopilot/db/a.g.2.prechk.bc -o F:/Desktop/PRJ/current_lenet/current_conv_hls_pynq_prj/current_conv/solution1/.autopilot/db/a.g.2.bc -f -phase syn-check 
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:00 ; elapsed = 00:00:04 . Memory (MB): peak = 104.457 ; gain = 19.352
 INFO-FLOW: Compiler optimizing ...
-INFO-FLOW: Share syncheck's 1.bc for syn flow: copy F:/Desktop/HLS_study/current/current_conv/solution1/.autopilot/db/a.g.1.bc to F:/Desktop/HLS_study/current/current_conv/solution1/.autopilot/db/a.o.1.bc
+INFO-FLOW: Share syncheck's 1.bc for syn flow: copy F:/Desktop/PRJ/current_lenet/current_conv_hls_pynq_prj/current_conv/solution1/.autopilot/db/a.g.1.bc to F:/Desktop/PRJ/current_lenet/current_conv_hls_pynq_prj/current_conv/solution1/.autopilot/db/a.o.1.bc
 INFO-FLOW: Presyn 1...
-Execute         transform -hls -tmp F:/Desktop/HLS_study/current/current_conv/solution1/.autopilot/db -interface-port-rename -type-info -function-uniquify -directive-preproc -mem2reg -dse -dce -disaggr -scalarrepl -norm-name -deadargelim -mem2reg -instcombine -dce -simplifycfg -auto-rom-infer -dce -function-uniquify -resource-proc -simplifycfg -mem2reg -globaldce -resolve-double-ptr -dce -deadargelim -dce -instcombine -clib-intrinsic-prepare -dce -func-buffer -dce -pag -array-normalize -func-legal -instcombine -gvn -constprop -dce -ptrArgReplace -mem2reg -instcombine -dce -array-seg-normalize -deadargelim -instcombine -dce -pointer-simplify -dce -port-alignment -dce -interface-preproc -data-pack -instcombine -dce -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -gvn -gvn -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -adse -adce -loop-simplify -indvars -instcombine -gvn -loop-simplify -mem2reg -dce -find-region -instcombine -auto-loop-pipeline -inst-simplify -interface-preproc -cfgopt -instcombine -indvars -auto-loop-unroll -loop-simplify -loop-bound -xunroll -constprop -instcombine -simplifycfg -indvars -simplifycfg -dce -globaldce -clean-region -attach-range -gvn -inst-simplify -constprop -simplifycfg -dce -pointer-simplify -dce -globalopt -constprop -dce -array-promote -constprop -instcombine -dce -ptrArgReplace -mem2reg -instcombine -simplifycfg -dce -auto-par -instcombine -dce -array-transform-check -array-reshape -instcombine -simplifycfg -dce -ptrArgReplace -deadargelim -mem2reg -instcombine -simplifycfg -dce -indvars -loop-simplify -loop-bound -xunroll -constprop -instcombine -simplifycfg -indvars -simplifycfg -dce -globaldce -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -duplicate-dataflow-processes -globaldce -instcombine -array-partition -instcombine -simplifycfg -dce -ptrArgReplace -global-constprop -deadargelim -mem2reg -func-legal -instcombine -dce -global-constprop -deadargelim -mem2reg -instcombine -simplifycfg -dce -merge-param -deadargelim -globalopt -constprop -dce -array-promote -constprop -instcombine -dce -ptrArgReplace -mem2reg -instcombine -simplifycfg -dce -mem-intrinsic-preproc -dce -global-internalize -global-privatize -mem2reg -globaldce -promote-global-argument -ptrArgReplace -mem2reg -instcombine -dce -globalopt -mergereturn -simplify-global-access -mem2reg -dce -pointer-simplify -dce -functionattrs -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -gvn -gvn -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -adse -adce -inst-simplify -dce -norm-name -function-inline -globaldce -func-inst -constprop -instcombine -simplifycfg -dce -func-legal -dce -loop-bound -arraycheck -bitwidthmin -on-by-dataflow -loop-delete -instcombine -simplifycfg -globaldce -dce -gvn -deadargelim -dce -loop-simplify -clean-region -simplifycfg -propagate-stable-arguments -loop-stream -instcombine -simplifycfg -dce -globaldce -duplicate-dataflow-processes -stream-intrinsic-preproc -dce -check-ap-stream -loop-simplify -eliminate-keepreads -extract-dataflow-in-loop -loop-simplify -dce -gvn -deadargelim -dse -check-dataflow-syntax -legalize-stream-variable -legalize-global -extract-subproc -dce -dead-channel-elimination -canonicalize-gep -globaldce -dce -gvn -deadargelim -annotate-dataflow-channels -scalar-propagation -deadargelim -globaldce -mem2reg -check-dataflow-channels -function-stream -dce -globaldce -prop-fifo-spec -internal-stream-gen -canonicalize-gep -globaldce -dce -gvn -deadargelim -mergereturn -indvars -loop-simplify -instcombine -array-stream -array-seg-normalize -array-partition -func-legal -instcombine -simplifycfg -dce -bundle-memfifo-ops -deadargelim -function-uniquify -directive-preproc -mem2reg -dse -dce -group-axi-access -licm -simplifycfg -dce -loop-delete -norm-name F:/Desktop/HLS_study/current/current_conv/solution1/.autopilot/db/a.o.1.bc -o F:/Desktop/HLS_study/current/current_conv/solution1/.autopilot/db/a.o.1.tmp.bc -f 
-Command         transform done; 0.178 sec.
+Execute         transform -hls -tmp F:/Desktop/PRJ/current_lenet/current_conv_hls_pynq_prj/current_conv/solution1/.autopilot/db -interface-port-rename -type-info -function-uniquify -directive-preproc -mem2reg -dse -dce -disaggr -scalarrepl -norm-name -deadargelim -mem2reg -instcombine -dce -simplifycfg -auto-rom-infer -dce -function-uniquify -resource-proc -simplifycfg -mem2reg -globaldce -resolve-double-ptr -dce -deadargelim -dce -instcombine -clib-intrinsic-prepare -dce -func-buffer -dce -pag -array-normalize -func-legal -instcombine -gvn -constprop -dce -ptrArgReplace -mem2reg -instcombine -dce -array-seg-normalize -deadargelim -instcombine -dce -pointer-simplify -dce -port-alignment -dce -interface-preproc -data-pack -instcombine -dce -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -gvn -gvn -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -adse -adce -loop-simplify -indvars -instcombine -gvn -loop-simplify -mem2reg -dce -find-region -instcombine -auto-loop-pipeline -inst-simplify -interface-preproc -cfgopt -instcombine -indvars -auto-loop-unroll -loop-simplify -loop-bound -xunroll -constprop -instcombine -simplifycfg -indvars -simplifycfg -dce -globaldce -clean-region -attach-range -gvn -inst-simplify -constprop -simplifycfg -dce -pointer-simplify -dce -globalopt -constprop -dce -array-promote -constprop -instcombine -dce -ptrArgReplace -mem2reg -instcombine -simplifycfg -dce -auto-par -instcombine -dce -array-transform-check -array-reshape -instcombine -simplifycfg -dce -ptrArgReplace -deadargelim -mem2reg -instcombine -simplifycfg -dce -indvars -loop-simplify -loop-bound -xunroll -constprop -instcombine -simplifycfg -indvars -simplifycfg -dce -globaldce -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -duplicate-dataflow-processes -globaldce -instcombine -array-partition -instcombine -simplifycfg -dce -ptrArgReplace -global-constprop -deadargelim -mem2reg -func-legal -instcombine -dce -global-constprop -deadargelim -mem2reg -instcombine -simplifycfg -dce -merge-param -deadargelim -globalopt -constprop -dce -array-promote -constprop -instcombine -dce -ptrArgReplace -mem2reg -instcombine -simplifycfg -dce -mem-intrinsic-preproc -dce -global-internalize -global-privatize -mem2reg -globaldce -promote-global-argument -ptrArgReplace -mem2reg -instcombine -dce -globalopt -mergereturn -simplify-global-access -mem2reg -dce -pointer-simplify -dce -functionattrs -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -gvn -gvn -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -adse -adce -inst-simplify -dce -norm-name -function-inline -globaldce -func-inst -constprop -instcombine -simplifycfg -dce -func-legal -dce -loop-bound -arraycheck -bitwidthmin -on-by-dataflow -loop-delete -instcombine -simplifycfg -globaldce -dce -gvn -deadargelim -dce -loop-simplify -clean-region -simplifycfg -propagate-stable-arguments -loop-stream -instcombine -simplifycfg -dce -globaldce -duplicate-dataflow-processes -stream-intrinsic-preproc -dce -check-ap-stream -loop-simplify -eliminate-keepreads -extract-dataflow-in-loop -loop-simplify -dce -gvn -deadargelim -dse -check-dataflow-syntax -legalize-stream-variable -legalize-global -extract-subproc -dce -dead-channel-elimination -canonicalize-gep -globaldce -dce -gvn -deadargelim -annotate-dataflow-channels -scalar-propagation -deadargelim -globaldce -mem2reg -check-dataflow-channels -function-stream -dce -globaldce -prop-fifo-spec -internal-stream-gen -canonicalize-gep -globaldce -dce -gvn -deadargelim -mergereturn -indvars -loop-simplify -instcombine -array-stream -array-seg-normalize -array-partition -func-legal -instcombine -simplifycfg -dce -bundle-memfifo-ops -deadargelim -function-uniquify -directive-preproc -mem2reg -dse -dce -group-axi-access -licm -simplifycfg -dce -loop-delete -norm-name F:/Desktop/PRJ/current_lenet/current_conv_hls_pynq_prj/current_conv/solution1/.autopilot/db/a.o.1.bc -o F:/Desktop/PRJ/current_lenet/current_conv_hls_pynq_prj/current_conv/solution1/.autopilot/db/a.o.1.tmp.bc -f 
+Command         transform done; 0.186 sec.
 INFO-FLOW: Presyn 2...
-Execute         transform -hls -keep-callgraph -scalarrepl -mem2reg -port-alignment -attach-range -dce -pipe-mux-gen -indvars -loop-bound -inst-simplify -instcombine -dce -merge-array-access -mem2reg -dce -clean-region -mergereturn -if-conv -instcombine -dce -constprop -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -gvn -gvn -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -adse -adce -scalarrepl -mem2reg -global-constprop -deadargelim -deadargelim -instcombine -dce -simplifycfg -ptrArgReplace -mem2reg -function-inline -globaldce -mem2reg -instcombine -dce -expr-balance -instcombine -dce -bitwidthmin -interface-preproc -directive-preproc -inst-rectify -instcombine -dce -functionattrs -constprop -instcombine -bit-constprop -simplify-global-access -globalopt -globaldce -inst-simplify -instcombine -elimdeaddata -dce -loop-delete -simplifycfg -loop-simplify -auto-burst -norm-name F:/Desktop/HLS_study/current/current_conv/solution1/.autopilot/db/a.o.1.tmp.bc -o F:/Desktop/HLS_study/current/current_conv/solution1/.autopilot/db/a.o.2.bc -f -phase presyn 
+Execute         transform -hls -keep-callgraph -scalarrepl -mem2reg -port-alignment -attach-range -dce -pipe-mux-gen -indvars -loop-bound -inst-simplify -instcombine -dce -merge-array-access -mem2reg -dce -clean-region -mergereturn -if-conv -instcombine -dce -constprop -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -gvn -gvn -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -adse -adce -scalarrepl -mem2reg -global-constprop -deadargelim -deadargelim -instcombine -dce -simplifycfg -ptrArgReplace -mem2reg -function-inline -globaldce -mem2reg -instcombine -dce -expr-balance -instcombine -dce -bitwidthmin -interface-preproc -directive-preproc -inst-rectify -instcombine -dce -functionattrs -constprop -instcombine -bit-constprop -simplify-global-access -globalopt -globaldce -inst-simplify -instcombine -elimdeaddata -dce -loop-delete -simplifycfg -loop-simplify -auto-burst -norm-name F:/Desktop/PRJ/current_lenet/current_conv_hls_pynq_prj/current_conv/solution1/.autopilot/db/a.o.1.tmp.bc -o F:/Desktop/PRJ/current_lenet/current_conv_hls_pynq_prj/current_conv/solution1/.autopilot/db/a.o.2.bc -f -phase presyn 
 INFO: [XFORM 203-11] Balancing expressions in function 'load_feature' (current_conv/current_conv.cpp:14)...3 expression(s) balanced.
-INFO: [XFORM 203-11] Balancing expressions in function 'conv' (current_conv/current_conv.cpp:102)...3 expression(s) balanced.
-INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 125.539 ; gain = 40.801
+INFO: [XFORM 203-11] Balancing expressions in function 'conv' (current_conv/current_conv.cpp:105)...3 expression(s) balanced.
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:00 ; elapsed = 00:00:04 . Memory (MB): peak = 124.832 ; gain = 39.727
 INFO-FLOW: Building ssdm...
-Execute         transform -hls -function-uniquify -auto-function-inline -globaldce -ptrArgReplace -mem2reg -instcombine -dce -reset-lda -loop-simplify -indvars -licm -loop-dep -loop-bound -licm -loop-simplify -flattenloopnest -array-flatten -gvn -instcombine -dce -array-map -dce -func-legal -gvn -adce -instcombine -cfgopt -simplifycfg -loop-simplify -array-burst -promote-global-argument -dce -axi4-lower -array-seg-normalize -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -gvn -gvn -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -dse -adse -adce -licm -inst-simplify -dce -globaldce -instcombine -array-stream -eliminate-keepreads -instcombine -dce -deadargelim -doublePtrSimplify -doublePtrElim -dce -doublePtrSimplify -promote-dbg-pointer -dce -scalarrepl -mem2reg -disaggr -norm-name -mem2reg -instcombine -dse -adse -adce -ptrLegalization -dce -auto-rom-infer -array-flatten -dce -instcombine -check-doubleptr -loop-rot -constprop -cfgopt -simplifycfg -loop-simplify -indvars -pointer-simplify -dce -loop-bound -loop-simplify -loop-preproc -constprop -global-constprop -gvn -mem2reg -instcombine -dce -loop-bound -loop-merge -dce -bitwidthmin -deadargelim -dce -canonicalize-dataflow -dce -scalar-propagation -deadargelim -globaldce -mem2reg -read-loop-dep -interface-preproc -directive-preproc -interface-gen -bram-byte-enable -deadargelim -inst-simplify -dce -gvn -mem2reg -instcombine -dce -adse -loop-bound -instcombine -cfgopt -simplifycfg -loop-simplify -clean-region -io-protocol -find-region -mem2reg -bitop-raise -inst-simplify -inst-rectify -instcombine -adce -deadargelim -loop-simplify -phi-opt -bitop-raise -cfgopt -simplifycfg -strip-dead-prototypes -interface-lower -bitop-lower -intrinsic-lower -auto-function-inline -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -inst-simplify -simplifycfg -loop-simplify -mergereturn -inst-simplify -inst-rectify -dce -load-elim -bitop-lower -loop-rewind -pointer-simplify -dce -cfgopt -dce -bitwidth -loop-bound -loop-dep -read-loop-dep -dce -check-stream -norm-name -legalize -validate-dataflow -inst-clarity -cdfg-build F:/Desktop/HLS_study/current/current_conv/solution1/.autopilot/db/a.o.2.bc -o F:/Desktop/HLS_study/current/current_conv/solution1/.autopilot/db/a.o.3.bc -f -phase build-ssdm 
-INFO: [XFORM 203-541] Flattening a loop nest 'Loop-1.1' (current_conv/current_conv.cpp:84:16) in function 'multiply'.
-INFO: [XFORM 203-541] Flattening a loop nest 'Loop-1' (current_conv/current_conv.cpp:81:19) in function 'multiply'.
-INFO: [XFORM 203-541] Flattening a loop nest 'Loop-1.1' (current_conv/current_conv.cpp:25:16) in function 'load_feature'.
-INFO: [XFORM 203-541] Flattening a loop nest 'Loop-1' (current_conv/current_conv.cpp:22:19) in function 'load_feature'.
-INFO: [HLS 200-444] Inferring multiple bus burst read of variable length on port 'weight' (current_conv/current_conv.cpp:68:2). These data requests might be further partitioned to multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.
-Command         transform done; 0.237 sec.
-INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 147.402 ; gain = 62.664
+Execute         transform -hls -function-uniquify -auto-function-inline -globaldce -ptrArgReplace -mem2reg -instcombine -dce -reset-lda -loop-simplify -indvars -licm -loop-dep -loop-bound -licm -loop-simplify -flattenloopnest -array-flatten -gvn -instcombine -dce -array-map -dce -func-legal -gvn -adce -instcombine -cfgopt -simplifycfg -loop-simplify -array-burst -promote-global-argument -dce -axi4-lower -array-seg-normalize -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -gvn -gvn -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -dse -adse -adce -licm -inst-simplify -dce -globaldce -instcombine -array-stream -eliminate-keepreads -instcombine -dce -deadargelim -doublePtrSimplify -doublePtrElim -dce -doublePtrSimplify -promote-dbg-pointer -dce -scalarrepl -mem2reg -disaggr -norm-name -mem2reg -instcombine -dse -adse -adce -ptrLegalization -dce -auto-rom-infer -array-flatten -dce -instcombine -check-doubleptr -loop-rot -constprop -cfgopt -simplifycfg -loop-simplify -indvars -pointer-simplify -dce -loop-bound -loop-simplify -loop-preproc -constprop -global-constprop -gvn -mem2reg -instcombine -dce -loop-bound -loop-merge -dce -bitwidthmin -deadargelim -dce -canonicalize-dataflow -dce -scalar-propagation -deadargelim -globaldce -mem2reg -read-loop-dep -interface-preproc -directive-preproc -interface-gen -bram-byte-enable -deadargelim -inst-simplify -dce -gvn -mem2reg -instcombine -dce -adse -loop-bound -instcombine -cfgopt -simplifycfg -loop-simplify -clean-region -io-protocol -find-region -mem2reg -bitop-raise -inst-simplify -inst-rectify -instcombine -adce -deadargelim -loop-simplify -phi-opt -bitop-raise -cfgopt -simplifycfg -strip-dead-prototypes -interface-lower -bitop-lower -intrinsic-lower -auto-function-inline -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -inst-simplify -simplifycfg -loop-simplify -mergereturn -inst-simplify -inst-rectify -dce -load-elim -bitop-lower -loop-rewind -pointer-simplify -dce -cfgopt -dce -bitwidth -loop-bound -loop-dep -read-loop-dep -dce -check-stream -norm-name -legalize -validate-dataflow -inst-clarity -cdfg-build F:/Desktop/PRJ/current_lenet/current_conv_hls_pynq_prj/current_conv/solution1/.autopilot/db/a.o.2.bc -o F:/Desktop/PRJ/current_lenet/current_conv_hls_pynq_prj/current_conv/solution1/.autopilot/db/a.o.3.bc -f -phase build-ssdm 
+INFO: [XFORM 203-541] Flattening a loop nest 'Loop-1.1' (current_conv/current_conv.cpp:87:16) in function 'multiply'.
+INFO: [XFORM 203-541] Flattening a loop nest 'Loop-1' (current_conv/current_conv.cpp:84:19) in function 'multiply'.
+INFO: [XFORM 203-541] Flattening a loop nest 'Loop-1.1' (current_conv/current_conv.cpp:26:16) in function 'load_feature'.
+INFO: [XFORM 203-541] Flattening a loop nest 'Loop-1' (current_conv/current_conv.cpp:23:19) in function 'load_feature'.
+INFO: [HLS 200-444] Inferring multiple bus burst read of variable length on port 'weight' (current_conv/current_conv.cpp:71:2). These data requests might be further partitioned to multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.
+Command         transform done; 0.228 sec.
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 147.559 ; gain = 62.453
 INFO-FLOW: Finish building internal data model.
-Command       opt_and_import_c done; 0.841 sec.
-Command     elaborate done; 4.406 sec.
+Command       opt_and_import_c done; 0.822 sec.
+Command     elaborate done; 4.272 sec.
 Execute     autosyn -from_csynth_design=1 
 INFO: [HLS 200-10] Starting hardware synthesis ...
 INFO-FLOW: Synthesizing C/C++ design ...
@@ -250,9 +250,9 @@ INFO: [SCHED 204-11] Starting scheduling ...
 INFO: [SCHED 204-61] Pipelining loop 'Loop 1'.
 INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 10.
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111]  Elapsed time: 4.86 seconds; current allocated memory: 107.714 MB.
-Execute       report -o F:/Desktop/HLS_study/current/current_conv/solution1/.autopilot/db/load_feature.verbose.sched.rpt -verbose -f 
-Execute       db_write -o F:/Desktop/HLS_study/current/current_conv/solution1/.autopilot/db/load_feature.sched.adb -f 
+INFO: [HLS 200-111]  Elapsed time: 4.755 seconds; current allocated memory: 107.789 MB.
+Execute       report -o F:/Desktop/PRJ/current_lenet/current_conv_hls_pynq_prj/current_conv/solution1/.autopilot/db/load_feature.verbose.sched.rpt -verbose -f 
+Execute       db_write -o F:/Desktop/PRJ/current_lenet/current_conv_hls_pynq_prj/current_conv/solution1/.autopilot/db/load_feature.sched.adb -f 
 INFO-FLOW: Finish scheduling load_feature.
 Execute       set_default_model load_feature 
 Execute       bind -model load_feature 
@@ -264,9 +264,9 @@ INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111]  Elapsed time: 0.059 seconds; current allocated memory: 108.156 MB.
-Execute       report -o F:/Desktop/HLS_study/current/current_conv/solution1/.autopilot/db/load_feature.verbose.bind.rpt -verbose -f 
-Execute       db_write -o F:/Desktop/HLS_study/current/current_conv/solution1/.autopilot/db/load_feature.bind.adb -f 
+INFO: [HLS 200-111]  Elapsed time: 0.061 seconds; current allocated memory: 108.286 MB.
+Execute       report -o F:/Desktop/PRJ/current_lenet/current_conv_hls_pynq_prj/current_conv/solution1/.autopilot/db/load_feature.verbose.bind.rpt -verbose -f 
+Execute       db_write -o F:/Desktop/PRJ/current_lenet/current_conv_hls_pynq_prj/current_conv/solution1/.autopilot/db/load_feature.bind.adb -f 
 INFO-FLOW: Finish binding load_feature.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-42] -- Implementing module 'load_weight' 
@@ -277,9 +277,9 @@ INFO: [SCHED 204-11] Starting scheduling ...
 INFO: [SCHED 204-61] Pipelining loop 'Loop 1'.
 INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 3.
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111]  Elapsed time: 0.076 seconds; current allocated memory: 108.389 MB.
-Execute       report -o F:/Desktop/HLS_study/current/current_conv/solution1/.autopilot/db/load_weight.verbose.sched.rpt -verbose -f 
-Execute       db_write -o F:/Desktop/HLS_study/current/current_conv/solution1/.autopilot/db/load_weight.sched.adb -f 
+INFO: [HLS 200-111]  Elapsed time: 0.086 seconds; current allocated memory: 108.484 MB.
+Execute       report -o F:/Desktop/PRJ/current_lenet/current_conv_hls_pynq_prj/current_conv/solution1/.autopilot/db/load_weight.verbose.sched.rpt -verbose -f 
+Execute       db_write -o F:/Desktop/PRJ/current_lenet/current_conv_hls_pynq_prj/current_conv/solution1/.autopilot/db/load_weight.sched.adb -f 
 INFO-FLOW: Finish scheduling load_weight.
 Execute       set_default_model load_weight 
 Execute       bind -model load_weight 
@@ -291,9 +291,9 @@ INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111]  Elapsed time: 0.023 seconds; current allocated memory: 108.523 MB.
-Execute       report -o F:/Desktop/HLS_study/current/current_conv/solution1/.autopilot/db/load_weight.verbose.bind.rpt -verbose -f 
-Execute       db_write -o F:/Desktop/HLS_study/current/current_conv/solution1/.autopilot/db/load_weight.bind.adb -f 
+INFO: [HLS 200-111]  Elapsed time: 0.026 seconds; current allocated memory: 108.618 MB.
+Execute       report -o F:/Desktop/PRJ/current_lenet/current_conv_hls_pynq_prj/current_conv/solution1/.autopilot/db/load_weight.verbose.bind.rpt -verbose -f 
+Execute       db_write -o F:/Desktop/PRJ/current_lenet/current_conv_hls_pynq_prj/current_conv/solution1/.autopilot/db/load_weight.bind.adb -f 
 INFO-FLOW: Finish binding load_weight.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-42] -- Implementing module 'multiply' 
@@ -304,9 +304,9 @@ INFO: [SCHED 204-11] Starting scheduling ...
 INFO: [SCHED 204-61] Pipelining loop 'Loop 1'.
 INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 2.
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111]  Elapsed time: 0.058 seconds; current allocated memory: 108.964 MB.
-Execute       report -o F:/Desktop/HLS_study/current/current_conv/solution1/.autopilot/db/multiply.verbose.sched.rpt -verbose -f 
-Execute       db_write -o F:/Desktop/HLS_study/current/current_conv/solution1/.autopilot/db/multiply.sched.adb -f 
+INFO: [HLS 200-111]  Elapsed time: 0.06 seconds; current allocated memory: 109.033 MB.
+Execute       report -o F:/Desktop/PRJ/current_lenet/current_conv_hls_pynq_prj/current_conv/solution1/.autopilot/db/multiply.verbose.sched.rpt -verbose -f 
+Execute       db_write -o F:/Desktop/PRJ/current_lenet/current_conv_hls_pynq_prj/current_conv/solution1/.autopilot/db/multiply.sched.adb -f 
 INFO-FLOW: Finish scheduling multiply.
 Execute       set_default_model multiply 
 Execute       bind -model multiply 
@@ -318,9 +318,9 @@ INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111]  Elapsed time: 0.036 seconds; current allocated memory: 109.241 MB.
-Execute       report -o F:/Desktop/HLS_study/current/current_conv/solution1/.autopilot/db/multiply.verbose.bind.rpt -verbose -f 
-Execute       db_write -o F:/Desktop/HLS_study/current/current_conv/solution1/.autopilot/db/multiply.bind.adb -f 
+INFO: [HLS 200-111]  Elapsed time: 0.034 seconds; current allocated memory: 109.346 MB.
+Execute       report -o F:/Desktop/PRJ/current_lenet/current_conv_hls_pynq_prj/current_conv/solution1/.autopilot/db/multiply.verbose.bind.rpt -verbose -f 
+Execute       db_write -o F:/Desktop/PRJ/current_lenet/current_conv_hls_pynq_prj/current_conv/solution1/.autopilot/db/multiply.bind.adb -f 
 INFO-FLOW: Finish binding multiply.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-42] -- Implementing module 'conv' 
@@ -329,10 +329,10 @@ Execute       set_default_model conv
 Execute       schedule -model conv 
 INFO: [SCHED 204-11] Starting scheduling ...
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111]  Elapsed time: 0.08 seconds; current allocated memory: 109.673 MB.
-Execute       report -o F:/Desktop/HLS_study/current/current_conv/solution1/.autopilot/db/conv.verbose.sched.rpt -verbose -f 
+INFO: [HLS 200-111]  Elapsed time: 0.078 seconds; current allocated memory: 109.751 MB.
+Execute       report -o F:/Desktop/PRJ/current_lenet/current_conv_hls_pynq_prj/current_conv/solution1/.autopilot/db/conv.verbose.sched.rpt -verbose -f 
 INFO: [HLS 200-434] Only 0 loops out of a total 3 loops have been pipelined in this design.
-Execute       db_write -o F:/Desktop/HLS_study/current/current_conv/solution1/.autopilot/db/conv.sched.adb -f 
+Execute       db_write -o F:/Desktop/PRJ/current_lenet/current_conv_hls_pynq_prj/current_conv/solution1/.autopilot/db/conv.sched.adb -f 
 INFO-FLOW: Finish scheduling conv.
 Execute       set_default_model conv 
 Execute       bind -model conv 
@@ -344,9 +344,9 @@ INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111]  Elapsed time: 0.108 seconds; current allocated memory: 110.384 MB.
-Execute       report -o F:/Desktop/HLS_study/current/current_conv/solution1/.autopilot/db/conv.verbose.bind.rpt -verbose -f 
-Execute       db_write -o F:/Desktop/HLS_study/current/current_conv/solution1/.autopilot/db/conv.bind.adb -f 
+INFO: [HLS 200-111]  Elapsed time: 0.11 seconds; current allocated memory: 110.459 MB.
+Execute       report -o F:/Desktop/PRJ/current_lenet/current_conv_hls_pynq_prj/current_conv/solution1/.autopilot/db/conv.verbose.bind.rpt -verbose -f 
+Execute       db_write -o F:/Desktop/PRJ/current_lenet/current_conv_hls_pynq_prj/current_conv/solution1/.autopilot/db/conv.bind.adb -f 
 INFO-FLOW: Finish binding conv.
 Execute       get_model_list conv -filter all-wo-channel 
 INFO-FLOW: Preprocessing for RTLGen ...
@@ -360,62 +360,62 @@ INFO: [HLS 200-10] -- Generating RTL for module 'load_feature'
 INFO: [HLS 200-10] ----------------------------------------------------------------
 Execute       get_config_rtl -prefix 
 Execute       get_config_rtl -auto_prefix 
-Execute       create_rtl_model load_feature -vendor xilinx -mg_file F:/Desktop/HLS_study/current/current_conv/solution1/.autopilot/db/load_feature.compgen.tcl 
+Execute       create_rtl_model load_feature -vendor xilinx -mg_file F:/Desktop/PRJ/current_lenet/current_conv_hls_pynq_prj/current_conv/solution1/.autopilot/db/load_feature.compgen.tcl 
 INFO: [RTGEN 206-100] Finished creating RTL model for 'load_feature'.
-INFO: [HLS 200-111]  Elapsed time: 0.132 seconds; current allocated memory: 111.481 MB.
-Execute       source F:/Desktop/HLS_study/current/current_conv/solution1/.autopilot/db/conv.rtl_wrap.cfg.tcl 
-Execute       gen_rtl load_feature -style xilinx -tracefl mytrace -tracefmt vcd -traceopt all -f -lang sc -o F:/Desktop/HLS_study/current/current_conv/solution1/syn/systemc/load_feature -synmodules load_feature load_weight multiply conv 
-Execute       gen_rtl load_feature -style xilinx -f -lang vhdl -o F:/Desktop/HLS_study/current/current_conv/solution1/syn/vhdl/load_feature 
-Execute       gen_rtl load_feature -style xilinx -f -lang vlog -o F:/Desktop/HLS_study/current/current_conv/solution1/syn/verilog/load_feature 
-Execute       gen_tb_info load_feature -o F:/Desktop/HLS_study/current/current_conv/solution1/.autopilot/db/load_feature -p F:/Desktop/HLS_study/current/current_conv/solution1/.autopilot/db 
-Execute       report -model load_feature -o F:/Desktop/HLS_study/current/current_conv/solution1/syn/report/load_feature_csynth.rpt -f 
-Execute       report -model load_feature -o F:/Desktop/HLS_study/current/current_conv/solution1/syn/report/load_feature_csynth.xml -f -x 
-Execute       report -model load_feature -o F:/Desktop/HLS_study/current/current_conv/solution1/.autopilot/db/load_feature.verbose.rpt -verbose -f 
-Execute       db_write -model load_feature -o F:/Desktop/HLS_study/current/current_conv/solution1/.autopilot/db/load_feature.adb -f 
+INFO: [HLS 200-111]  Elapsed time: 0.136 seconds; current allocated memory: 111.578 MB.
+Execute       source F:/Desktop/PRJ/current_lenet/current_conv_hls_pynq_prj/current_conv/solution1/.autopilot/db/conv.rtl_wrap.cfg.tcl 
+Execute       gen_rtl load_feature -style xilinx -tracefl mytrace -tracefmt vcd -traceopt all -f -lang sc -o F:/Desktop/PRJ/current_lenet/current_conv_hls_pynq_prj/current_conv/solution1/syn/systemc/load_feature -synmodules load_feature load_weight multiply conv 
+Execute       gen_rtl load_feature -style xilinx -f -lang vhdl -o F:/Desktop/PRJ/current_lenet/current_conv_hls_pynq_prj/current_conv/solution1/syn/vhdl/load_feature 
+Execute       gen_rtl load_feature -style xilinx -f -lang vlog -o F:/Desktop/PRJ/current_lenet/current_conv_hls_pynq_prj/current_conv/solution1/syn/verilog/load_feature 
+Execute       gen_tb_info load_feature -o F:/Desktop/PRJ/current_lenet/current_conv_hls_pynq_prj/current_conv/solution1/.autopilot/db/load_feature -p F:/Desktop/PRJ/current_lenet/current_conv_hls_pynq_prj/current_conv/solution1/.autopilot/db 
+Execute       report -model load_feature -o F:/Desktop/PRJ/current_lenet/current_conv_hls_pynq_prj/current_conv/solution1/syn/report/load_feature_csynth.rpt -f 
+Execute       report -model load_feature -o F:/Desktop/PRJ/current_lenet/current_conv_hls_pynq_prj/current_conv/solution1/syn/report/load_feature_csynth.xml -f -x 
+Execute       report -model load_feature -o F:/Desktop/PRJ/current_lenet/current_conv_hls_pynq_prj/current_conv/solution1/.autopilot/db/load_feature.verbose.rpt -verbose -f 
+Execute       db_write -model load_feature -o F:/Desktop/PRJ/current_lenet/current_conv_hls_pynq_prj/current_conv/solution1/.autopilot/db/load_feature.adb -f 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-10] -- Generating RTL for module 'load_weight' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 Execute       get_config_rtl -prefix 
 Execute       get_config_rtl -auto_prefix 
-Execute       create_rtl_model load_weight -vendor xilinx -mg_file F:/Desktop/HLS_study/current/current_conv/solution1/.autopilot/db/load_weight.compgen.tcl 
+Execute       create_rtl_model load_weight -vendor xilinx -mg_file F:/Desktop/PRJ/current_lenet/current_conv_hls_pynq_prj/current_conv/solution1/.autopilot/db/load_weight.compgen.tcl 
 INFO: [RTGEN 206-100] Finished creating RTL model for 'load_weight'.
-INFO: [HLS 200-111]  Elapsed time: 0.199 seconds; current allocated memory: 112.230 MB.
-Execute       source F:/Desktop/HLS_study/current/current_conv/solution1/.autopilot/db/conv.rtl_wrap.cfg.tcl 
-Execute       gen_rtl load_weight -style xilinx -tracefl mytrace -tracefmt vcd -traceopt all -f -lang sc -o F:/Desktop/HLS_study/current/current_conv/solution1/syn/systemc/load_weight -synmodules load_feature load_weight multiply conv 
-Execute       gen_rtl load_weight -style xilinx -f -lang vhdl -o F:/Desktop/HLS_study/current/current_conv/solution1/syn/vhdl/load_weight 
-Execute       gen_rtl load_weight -style xilinx -f -lang vlog -o F:/Desktop/HLS_study/current/current_conv/solution1/syn/verilog/load_weight 
-Execute       gen_tb_info load_weight -o F:/Desktop/HLS_study/current/current_conv/solution1/.autopilot/db/load_weight -p F:/Desktop/HLS_study/current/current_conv/solution1/.autopilot/db 
-Execute       report -model load_weight -o F:/Desktop/HLS_study/current/current_conv/solution1/syn/report/load_weight_csynth.rpt -f 
-Execute       report -model load_weight -o F:/Desktop/HLS_study/current/current_conv/solution1/syn/report/load_weight_csynth.xml -f -x 
-Execute       report -model load_weight -o F:/Desktop/HLS_study/current/current_conv/solution1/.autopilot/db/load_weight.verbose.rpt -verbose -f 
-Execute       db_write -model load_weight -o F:/Desktop/HLS_study/current/current_conv/solution1/.autopilot/db/load_weight.adb -f 
+INFO: [HLS 200-111]  Elapsed time: 0.208 seconds; current allocated memory: 112.371 MB.
+Execute       source F:/Desktop/PRJ/current_lenet/current_conv_hls_pynq_prj/current_conv/solution1/.autopilot/db/conv.rtl_wrap.cfg.tcl 
+Execute       gen_rtl load_weight -style xilinx -tracefl mytrace -tracefmt vcd -traceopt all -f -lang sc -o F:/Desktop/PRJ/current_lenet/current_conv_hls_pynq_prj/current_conv/solution1/syn/systemc/load_weight -synmodules load_feature load_weight multiply conv 
+Execute       gen_rtl load_weight -style xilinx -f -lang vhdl -o F:/Desktop/PRJ/current_lenet/current_conv_hls_pynq_prj/current_conv/solution1/syn/vhdl/load_weight 
+Execute       gen_rtl load_weight -style xilinx -f -lang vlog -o F:/Desktop/PRJ/current_lenet/current_conv_hls_pynq_prj/current_conv/solution1/syn/verilog/load_weight 
+Execute       gen_tb_info load_weight -o F:/Desktop/PRJ/current_lenet/current_conv_hls_pynq_prj/current_conv/solution1/.autopilot/db/load_weight -p F:/Desktop/PRJ/current_lenet/current_conv_hls_pynq_prj/current_conv/solution1/.autopilot/db 
+Execute       report -model load_weight -o F:/Desktop/PRJ/current_lenet/current_conv_hls_pynq_prj/current_conv/solution1/syn/report/load_weight_csynth.rpt -f 
+Execute       report -model load_weight -o F:/Desktop/PRJ/current_lenet/current_conv_hls_pynq_prj/current_conv/solution1/syn/report/load_weight_csynth.xml -f -x 
+Execute       report -model load_weight -o F:/Desktop/PRJ/current_lenet/current_conv_hls_pynq_prj/current_conv/solution1/.autopilot/db/load_weight.verbose.rpt -verbose -f 
+Execute       db_write -model load_weight -o F:/Desktop/PRJ/current_lenet/current_conv_hls_pynq_prj/current_conv/solution1/.autopilot/db/load_weight.adb -f 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-10] -- Generating RTL for module 'multiply' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 Execute       get_config_rtl -prefix 
 Execute       get_config_rtl -auto_prefix 
-Execute       create_rtl_model multiply -vendor xilinx -mg_file F:/Desktop/HLS_study/current/current_conv/solution1/.autopilot/db/multiply.compgen.tcl 
+Execute       create_rtl_model multiply -vendor xilinx -mg_file F:/Desktop/PRJ/current_lenet/current_conv_hls_pynq_prj/current_conv/solution1/.autopilot/db/multiply.compgen.tcl 
 INFO: [SYN 201-210] Renamed object name 'conv_fadd_32ns_32ns_32_1_full_dsp_1' to 'conv_fadd_32ns_32bkb' due to the length limit 20
 INFO: [SYN 201-210] Renamed object name 'conv_fmul_32ns_32ns_32_1_max_dsp_1' to 'conv_fmul_32ns_32cud' due to the length limit 20
 INFO: [RTGEN 206-100] Generating core module 'conv_fadd_32ns_32bkb': 1 instance(s).
 INFO: [RTGEN 206-100] Generating core module 'conv_fmul_32ns_32cud': 1 instance(s).
 INFO: [RTGEN 206-100] Finished creating RTL model for 'multiply'.
-INFO: [HLS 200-111]  Elapsed time: 0.063 seconds; current allocated memory: 112.896 MB.
-Execute       source F:/Desktop/HLS_study/current/current_conv/solution1/.autopilot/db/conv.rtl_wrap.cfg.tcl 
-Execute       gen_rtl multiply -style xilinx -tracefl mytrace -tracefmt vcd -traceopt all -f -lang sc -o F:/Desktop/HLS_study/current/current_conv/solution1/syn/systemc/multiply -synmodules load_feature load_weight multiply conv 
-Execute       gen_rtl multiply -style xilinx -f -lang vhdl -o F:/Desktop/HLS_study/current/current_conv/solution1/syn/vhdl/multiply 
-Execute       gen_rtl multiply -style xilinx -f -lang vlog -o F:/Desktop/HLS_study/current/current_conv/solution1/syn/verilog/multiply 
-Execute       gen_tb_info multiply -o F:/Desktop/HLS_study/current/current_conv/solution1/.autopilot/db/multiply -p F:/Desktop/HLS_study/current/current_conv/solution1/.autopilot/db 
-Execute       report -model multiply -o F:/Desktop/HLS_study/current/current_conv/solution1/syn/report/multiply_csynth.rpt -f 
-Execute       report -model multiply -o F:/Desktop/HLS_study/current/current_conv/solution1/syn/report/multiply_csynth.xml -f -x 
-Execute       report -model multiply -o F:/Desktop/HLS_study/current/current_conv/solution1/.autopilot/db/multiply.verbose.rpt -verbose -f 
-Execute       db_write -model multiply -o F:/Desktop/HLS_study/current/current_conv/solution1/.autopilot/db/multiply.adb -f 
+INFO: [HLS 200-111]  Elapsed time: 0.065 seconds; current allocated memory: 113.000 MB.
+Execute       source F:/Desktop/PRJ/current_lenet/current_conv_hls_pynq_prj/current_conv/solution1/.autopilot/db/conv.rtl_wrap.cfg.tcl 
+Execute       gen_rtl multiply -style xilinx -tracefl mytrace -tracefmt vcd -traceopt all -f -lang sc -o F:/Desktop/PRJ/current_lenet/current_conv_hls_pynq_prj/current_conv/solution1/syn/systemc/multiply -synmodules load_feature load_weight multiply conv 
+Execute       gen_rtl multiply -style xilinx -f -lang vhdl -o F:/Desktop/PRJ/current_lenet/current_conv_hls_pynq_prj/current_conv/solution1/syn/vhdl/multiply 
+Execute       gen_rtl multiply -style xilinx -f -lang vlog -o F:/Desktop/PRJ/current_lenet/current_conv_hls_pynq_prj/current_conv/solution1/syn/verilog/multiply 
+Execute       gen_tb_info multiply -o F:/Desktop/PRJ/current_lenet/current_conv_hls_pynq_prj/current_conv/solution1/.autopilot/db/multiply -p F:/Desktop/PRJ/current_lenet/current_conv_hls_pynq_prj/current_conv/solution1/.autopilot/db 
+Execute       report -model multiply -o F:/Desktop/PRJ/current_lenet/current_conv_hls_pynq_prj/current_conv/solution1/syn/report/multiply_csynth.rpt -f 
+Execute       report -model multiply -o F:/Desktop/PRJ/current_lenet/current_conv_hls_pynq_prj/current_conv/solution1/syn/report/multiply_csynth.xml -f -x 
+Execute       report -model multiply -o F:/Desktop/PRJ/current_lenet/current_conv_hls_pynq_prj/current_conv/solution1/.autopilot/db/multiply.verbose.rpt -verbose -f 
+Execute       db_write -model multiply -o F:/Desktop/PRJ/current_lenet/current_conv_hls_pynq_prj/current_conv/solution1/.autopilot/db/multiply.adb -f 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-10] -- Generating RTL for module 'conv' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 Execute       get_config_rtl -prefix 
 Execute       get_config_rtl -auto_prefix 
-Execute       create_rtl_model conv -vendor xilinx -mg_file F:/Desktop/HLS_study/current/current_conv/solution1/.autopilot/db/conv.compgen.tcl 
+Execute       create_rtl_model conv -vendor xilinx -mg_file F:/Desktop/PRJ/current_lenet/current_conv_hls_pynq_prj/current_conv/solution1/.autopilot/db/conv.compgen.tcl 
 INFO: [RTGEN 206-500] Setting interface mode on port 'conv/gmem' to 'm_axi'.
 INFO: [RTGEN 206-500] Setting interface mode on port 'conv/chin' to 's_axilite & ap_none'.
 INFO: [RTGEN 206-500] Setting interface mode on port 'conv/chout' to 's_axilite & ap_none'.
@@ -435,36 +435,36 @@ INFO: [SYN 201-210] Renamed object name 'conv_sdiv_32ns_32ns_32_36_seq_1' to 'co
 INFO: [RTGEN 206-100] Generating core module 'conv_fadd_32ns_32bkb': 1 instance(s).
 INFO: [RTGEN 206-100] Generating core module 'conv_sdiv_32ns_32dEe': 2 instance(s).
 INFO: [RTGEN 206-100] Finished creating RTL model for 'conv'.
-INFO: [HLS 200-111]  Elapsed time: 0.205 seconds; current allocated memory: 114.770 MB.
-Execute       source F:/Desktop/HLS_study/current/current_conv/solution1/.autopilot/db/conv.rtl_wrap.cfg.tcl 
-Execute       gen_rtl conv -istop -style xilinx -tracefl mytrace -tracefmt vcd -traceopt all -f -lang sc -o F:/Desktop/HLS_study/current/current_conv/solution1/syn/systemc/conv -synmodules load_feature load_weight multiply conv 
-Execute       gen_rtl conv -istop -style xilinx -f -lang vhdl -o F:/Desktop/HLS_study/current/current_conv/solution1/syn/vhdl/conv 
-Execute       gen_rtl conv -istop -style xilinx -f -lang vlog -o F:/Desktop/HLS_study/current/current_conv/solution1/syn/verilog/conv 
-Execute       export_constraint_db -o F:/Desktop/HLS_study/current/current_conv/solution1/.autopilot/db/conv.constraint.tcl -f -tool general 
-Execute       report -model conv -o F:/Desktop/HLS_study/current/current_conv/solution1/.autopilot/db/conv.design.xml -verbose -f -dv 
-Execute       report -model conv -o F:/Desktop/HLS_study/current/current_conv/solution1/.autopilot/db/conv.sdaccel.xml -verbose -f -sdaccel 
-Execute       gen_tb_info conv -o F:/Desktop/HLS_study/current/current_conv/solution1/.autopilot/db/conv -p F:/Desktop/HLS_study/current/current_conv/solution1/.autopilot/db 
-Execute       report -model conv -o F:/Desktop/HLS_study/current/current_conv/solution1/syn/report/conv_csynth.rpt -f 
-Execute       report -model conv -o F:/Desktop/HLS_study/current/current_conv/solution1/syn/report/conv_csynth.xml -f -x 
-Execute       report -model conv -o F:/Desktop/HLS_study/current/current_conv/solution1/.autopilot/db/conv.verbose.rpt -verbose -f 
-Command       report done; 0.119 sec.
-Execute       db_write -model conv -o F:/Desktop/HLS_study/current/current_conv/solution1/.autopilot/db/conv.adb -f 
+INFO: [HLS 200-111]  Elapsed time: 0.188 seconds; current allocated memory: 114.896 MB.
+Execute       source F:/Desktop/PRJ/current_lenet/current_conv_hls_pynq_prj/current_conv/solution1/.autopilot/db/conv.rtl_wrap.cfg.tcl 
+Execute       gen_rtl conv -istop -style xilinx -tracefl mytrace -tracefmt vcd -traceopt all -f -lang sc -o F:/Desktop/PRJ/current_lenet/current_conv_hls_pynq_prj/current_conv/solution1/syn/systemc/conv -synmodules load_feature load_weight multiply conv 
+Execute       gen_rtl conv -istop -style xilinx -f -lang vhdl -o F:/Desktop/PRJ/current_lenet/current_conv_hls_pynq_prj/current_conv/solution1/syn/vhdl/conv 
+Execute       gen_rtl conv -istop -style xilinx -f -lang vlog -o F:/Desktop/PRJ/current_lenet/current_conv_hls_pynq_prj/current_conv/solution1/syn/verilog/conv 
+Execute       export_constraint_db -o F:/Desktop/PRJ/current_lenet/current_conv_hls_pynq_prj/current_conv/solution1/.autopilot/db/conv.constraint.tcl -f -tool general 
+Execute       report -model conv -o F:/Desktop/PRJ/current_lenet/current_conv_hls_pynq_prj/current_conv/solution1/.autopilot/db/conv.design.xml -verbose -f -dv 
+Execute       report -model conv -o F:/Desktop/PRJ/current_lenet/current_conv_hls_pynq_prj/current_conv/solution1/.autopilot/db/conv.sdaccel.xml -verbose -f -sdaccel 
+Execute       gen_tb_info conv -o F:/Desktop/PRJ/current_lenet/current_conv_hls_pynq_prj/current_conv/solution1/.autopilot/db/conv -p F:/Desktop/PRJ/current_lenet/current_conv_hls_pynq_prj/current_conv/solution1/.autopilot/db 
+Execute       report -model conv -o F:/Desktop/PRJ/current_lenet/current_conv_hls_pynq_prj/current_conv/solution1/syn/report/conv_csynth.rpt -f 
+Execute       report -model conv -o F:/Desktop/PRJ/current_lenet/current_conv_hls_pynq_prj/current_conv/solution1/syn/report/conv_csynth.xml -f -x 
+Execute       report -model conv -o F:/Desktop/PRJ/current_lenet/current_conv_hls_pynq_prj/current_conv/solution1/.autopilot/db/conv.verbose.rpt -verbose -f 
+Command       report done; 0.108 sec.
+Execute       db_write -model conv -o F:/Desktop/PRJ/current_lenet/current_conv_hls_pynq_prj/current_conv/solution1/.autopilot/db/conv.adb -f 
 Execute       sc_get_clocks conv 
 Execute       get_config_export -vivado_clock 
 Execute       sc_get_portdomain conv 
 INFO-FLOW: Model list for RTL component generation: load_feature load_weight multiply conv
 INFO-FLOW: Handling components in module [load_feature] ... 
-Execute       source F:/Desktop/HLS_study/current/current_conv/solution1/.autopilot/db/load_feature.compgen.tcl 
+Execute       source F:/Desktop/PRJ/current_lenet/current_conv_hls_pynq_prj/current_conv/solution1/.autopilot/db/load_feature.compgen.tcl 
 INFO-FLOW: Handling components in module [load_weight] ... 
-Execute       source F:/Desktop/HLS_study/current/current_conv/solution1/.autopilot/db/load_weight.compgen.tcl 
+Execute       source F:/Desktop/PRJ/current_lenet/current_conv_hls_pynq_prj/current_conv/solution1/.autopilot/db/load_weight.compgen.tcl 
 INFO-FLOW: Handling components in module [multiply] ... 
-Execute       source F:/Desktop/HLS_study/current/current_conv/solution1/.autopilot/db/multiply.compgen.tcl 
+Execute       source F:/Desktop/PRJ/current_lenet/current_conv_hls_pynq_prj/current_conv/solution1/.autopilot/db/multiply.compgen.tcl 
 INFO-FLOW: Found component conv_fadd_32ns_32bkb.
 INFO-FLOW: Append model conv_fadd_32ns_32bkb
 INFO-FLOW: Found component conv_fmul_32ns_32cud.
 INFO-FLOW: Append model conv_fmul_32ns_32cud
 INFO-FLOW: Handling components in module [conv] ... 
-Execute       source F:/Desktop/HLS_study/current/current_conv/solution1/.autopilot/db/conv.compgen.tcl 
+Execute       source F:/Desktop/PRJ/current_lenet/current_conv_hls_pynq_prj/current_conv/solution1/.autopilot/db/conv.compgen.tcl 
 INFO-FLOW: Found component conv_sdiv_32ns_32dEe.
 INFO-FLOW: Append model conv_sdiv_32ns_32dEe
 INFO-FLOW: Found component conv_feature_buffer.
@@ -496,15 +496,15 @@ INFO-FLOW: RTL Generation done.
 INFO-FLOW: CAS Generation done.
 INFO-FLOW: CBC Generation done.
 INFO-FLOW: DBG:CMD: auto_generate_csynth_design
-INFO-FLOW: DBG:CMD:     auto_generate --sim-model -phase csynth_design -d F:/Desktop/HLS_study/current/current_conv/solution1
-Execute       source F:/Desktop/HLS_study/current/current_conv/solution1/.autopilot/db/global.setting.tcl 
-INFO-FLOW: DBG:CMD: read_platform_lib F:/Desktop/HLS_study/current/current_conv/solution1/.autopilot/db/global.setting.tcl
+INFO-FLOW: DBG:CMD:     auto_generate --sim-model -phase csynth_design -d F:/Desktop/PRJ/current_lenet/current_conv_hls_pynq_prj/current_conv/solution1
+Execute       source F:/Desktop/PRJ/current_lenet/current_conv_hls_pynq_prj/current_conv/solution1/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:CMD: read_platform_lib F:/Desktop/PRJ/current_lenet/current_conv_hls_pynq_prj/current_conv/solution1/.autopilot/db/global.setting.tcl
 Execute       source D:/Vivado/Vivado/2018.3/common/technology/generic/autopilot/common.gen 
 Execute         source D:/Vivado/Vivado/2018.3/common/technology/generic/autopilot/APCoreGen.gen 
 Execute       source D:/Vivado/Vivado/2018.3/common/technology/generic/autopilot/op.gen 
 Execute       source D:/Vivado/Vivado/2018.3/common/technology/generic/autopilot/op_simcore.gen 
 Execute       source D:/Vivado/Vivado/2018.3/common/technology/generic/autopilot/interface.gen 
-Execute       source F:/Desktop/HLS_study/current/current_conv/solution1/.autopilot/db/global.setting.tcl 
+Execute       source F:/Desktop/PRJ/current_lenet/current_conv_hls_pynq_prj/current_conv/solution1/.autopilot/db/global.setting.tcl 
 Execute       source D:/Vivado/Vivado/2018.3/common/technology/xilinx/zynq/zynq.gen 
 Execute         source D:/Vivado/Vivado/2018.3/common/technology/xilinx/common/virtex.gen 
 Execute           source D:/Vivado/Vivado/2018.3/common/technology/xilinx/common/xilinx.gen 
@@ -525,26 +525,26 @@ Execute       source D:/Vivado/Vivado/2018.3/common/technology/xilinx/zynq/zynq_
 Execute         source D:/Vivado/Vivado/2018.3/common/technology/xilinx/common/xilinx_fpv6.gen 
 INFO-FLOW: DBG:CMD:   using AESL_AUTOCG::g_clock_period=50.000 (was NA)
 INFO-FLOW: DBG:CMD:       generate_ip_cores sim=1 export=0 expOnly=0 dstVlogDir=syn/verilog
-Execute       source F:/Desktop/HLS_study/current/current_conv/solution1/.autopilot/db/global.setting.tcl 
-Execute       source F:/Desktop/HLS_study/current/current_conv/solution1/.autopilot/db/global.setting.tcl 
-Execute       source F:/Desktop/HLS_study/current/current_conv/solution1/.autopilot/db/global.setting.tcl 
-Execute       source F:/Desktop/HLS_study/current/current_conv/solution1/.autopilot/db/load_feature.compgen.tcl 
-Execute       source F:/Desktop/HLS_study/current/current_conv/solution1/.autopilot/db/load_weight.compgen.tcl 
-Execute       source F:/Desktop/HLS_study/current/current_conv/solution1/.autopilot/db/multiply.compgen.tcl 
-Execute       source F:/Desktop/HLS_study/current/current_conv/solution1/.autopilot/db/conv.compgen.tcl 
+Execute       source F:/Desktop/PRJ/current_lenet/current_conv_hls_pynq_prj/current_conv/solution1/.autopilot/db/global.setting.tcl 
+Execute       source F:/Desktop/PRJ/current_lenet/current_conv_hls_pynq_prj/current_conv/solution1/.autopilot/db/global.setting.tcl 
+Execute       source F:/Desktop/PRJ/current_lenet/current_conv_hls_pynq_prj/current_conv/solution1/.autopilot/db/global.setting.tcl 
+Execute       source F:/Desktop/PRJ/current_lenet/current_conv_hls_pynq_prj/current_conv/solution1/.autopilot/db/load_feature.compgen.tcl 
+Execute       source F:/Desktop/PRJ/current_lenet/current_conv_hls_pynq_prj/current_conv/solution1/.autopilot/db/load_weight.compgen.tcl 
+Execute       source F:/Desktop/PRJ/current_lenet/current_conv_hls_pynq_prj/current_conv/solution1/.autopilot/db/multiply.compgen.tcl 
+Execute       source F:/Desktop/PRJ/current_lenet/current_conv_hls_pynq_prj/current_conv/solution1/.autopilot/db/conv.compgen.tcl 
 INFO: [RTMG 210-282] Generating pipelined core: 'conv_sdiv_32ns_32dEe_div'
 INFO: [RTMG 210-278] Implementing memory 'conv_feature_buffer_ram (RAM)' using block RAMs.
 Execute         source ./AXILiteS.slave.tcl 
 Execute         is_m_axi_addr64 
-INFO-FLOW: DBG:CMD:     auto_generate -export -impltomg_flag -rtl both -tool Vivado -pcore_version 1.00.a -phase csynth_design -d F:/Desktop/HLS_study/current/current_conv/solution1
-Execute       source F:/Desktop/HLS_study/current/current_conv/solution1/.autopilot/db/global.setting.tcl 
-INFO-FLOW: DBG:CMD: read_platform_lib F:/Desktop/HLS_study/current/current_conv/solution1/.autopilot/db/global.setting.tcl
+INFO-FLOW: DBG:CMD:     auto_generate -export -impltomg_flag -rtl both -tool Vivado -pcore_version 1.00.a -phase csynth_design -d F:/Desktop/PRJ/current_lenet/current_conv_hls_pynq_prj/current_conv/solution1
+Execute       source F:/Desktop/PRJ/current_lenet/current_conv_hls_pynq_prj/current_conv/solution1/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:CMD: read_platform_lib F:/Desktop/PRJ/current_lenet/current_conv_hls_pynq_prj/current_conv/solution1/.autopilot/db/global.setting.tcl
 Execute       source D:/Vivado/Vivado/2018.3/common/technology/generic/autopilot/common.gen 
 Execute         source D:/Vivado/Vivado/2018.3/common/technology/generic/autopilot/APCoreGen.gen 
 Execute       source D:/Vivado/Vivado/2018.3/common/technology/generic/autopilot/op.gen 
 Execute       source D:/Vivado/Vivado/2018.3/common/technology/generic/autopilot/op_simcore.gen 
 Execute       source D:/Vivado/Vivado/2018.3/common/technology/generic/autopilot/interface.gen 
-Execute       source F:/Desktop/HLS_study/current/current_conv/solution1/.autopilot/db/global.setting.tcl 
+Execute       source F:/Desktop/PRJ/current_lenet/current_conv_hls_pynq_prj/current_conv/solution1/.autopilot/db/global.setting.tcl 
 Execute       source D:/Vivado/Vivado/2018.3/common/technology/xilinx/zynq/zynq.gen 
 Execute         source D:/Vivado/Vivado/2018.3/common/technology/xilinx/common/virtex.gen 
 Execute           source D:/Vivado/Vivado/2018.3/common/technology/xilinx/common/xilinx.gen 
@@ -564,64 +564,64 @@ Execute           source D:/Vivado/Vivado/2018.3/common/technology/xilinx/common
 Execute       source D:/Vivado/Vivado/2018.3/common/technology/xilinx/zynq/zynq_fpv6.gen 
 Execute         source D:/Vivado/Vivado/2018.3/common/technology/xilinx/common/xilinx_fpv6.gen 
 INFO-FLOW: DBG:CMD:       initCTypeInfo top_module=conv xml_exists=0
-Execute       source F:/Desktop/HLS_study/current/current_conv/solution1/.autopilot/db/conv.rtl_wrap.cfg.tcl 
-Execute       source F:/Desktop/HLS_study/current/current_conv/solution1/.autopilot/db/conv.rtl_wrap.cfg.tcl 
-Execute       source F:/Desktop/HLS_study/current/current_conv/solution1/.autopilot/db/conv.rtl_wrap.cfg.tcl 
-Execute       source F:/Desktop/HLS_study/current/current_conv/solution1/.autopilot/db/conv.tbgen.tcl 
-Execute       source F:/Desktop/HLS_study/current/current_conv/solution1/.autopilot/db/conv.tbgen.tcl 
+Execute       source F:/Desktop/PRJ/current_lenet/current_conv_hls_pynq_prj/current_conv/solution1/.autopilot/db/conv.rtl_wrap.cfg.tcl 
+Execute       source F:/Desktop/PRJ/current_lenet/current_conv_hls_pynq_prj/current_conv/solution1/.autopilot/db/conv.rtl_wrap.cfg.tcl 
+Execute       source F:/Desktop/PRJ/current_lenet/current_conv_hls_pynq_prj/current_conv/solution1/.autopilot/db/conv.rtl_wrap.cfg.tcl 
+Execute       source F:/Desktop/PRJ/current_lenet/current_conv_hls_pynq_prj/current_conv/solution1/.autopilot/db/conv.tbgen.tcl 
+Execute       source F:/Desktop/PRJ/current_lenet/current_conv_hls_pynq_prj/current_conv/solution1/.autopilot/db/conv.tbgen.tcl 
 INFO-FLOW: DBG:CMD:       export_impl_rtl
 INFO-FLOW: DBG:CMD:       generate_ip_cores sim=0 export=0 expOnly=0 dstVlogDir=impl/.verilog
-Execute       source F:/Desktop/HLS_study/current/current_conv/solution1/.autopilot/db/global.setting.tcl 
-Execute       source F:/Desktop/HLS_study/current/current_conv/solution1/.autopilot/db/load_feature.compgen.tcl 
-Execute       source F:/Desktop/HLS_study/current/current_conv/solution1/.autopilot/db/load_weight.compgen.tcl 
-Execute       source F:/Desktop/HLS_study/current/current_conv/solution1/.autopilot/db/multiply.compgen.tcl 
-Execute       source F:/Desktop/HLS_study/current/current_conv/solution1/.autopilot/db/conv.compgen.tcl 
+Execute       source F:/Desktop/PRJ/current_lenet/current_conv_hls_pynq_prj/current_conv/solution1/.autopilot/db/global.setting.tcl 
+Execute       source F:/Desktop/PRJ/current_lenet/current_conv_hls_pynq_prj/current_conv/solution1/.autopilot/db/load_feature.compgen.tcl 
+Execute       source F:/Desktop/PRJ/current_lenet/current_conv_hls_pynq_prj/current_conv/solution1/.autopilot/db/load_weight.compgen.tcl 
+Execute       source F:/Desktop/PRJ/current_lenet/current_conv_hls_pynq_prj/current_conv/solution1/.autopilot/db/multiply.compgen.tcl 
+Execute       source F:/Desktop/PRJ/current_lenet/current_conv_hls_pynq_prj/current_conv/solution1/.autopilot/db/conv.compgen.tcl 
 INFO-FLOW: DBG:CMD:       generate_ip_cores sim=0 export=1 expOnly=1 dstVlogDir=impl/.pcores/verilog
-Execute       source F:/Desktop/HLS_study/current/current_conv/solution1/.autopilot/db/global.setting.tcl 
-Execute       source F:/Desktop/HLS_study/current/current_conv/solution1/.autopilot/db/load_feature.compgen.tcl 
-Execute       source F:/Desktop/HLS_study/current/current_conv/solution1/.autopilot/db/load_weight.compgen.tcl 
-Execute       source F:/Desktop/HLS_study/current/current_conv/solution1/.autopilot/db/multiply.compgen.tcl 
-Execute       source F:/Desktop/HLS_study/current/current_conv/solution1/.autopilot/db/conv.compgen.tcl 
+Execute       source F:/Desktop/PRJ/current_lenet/current_conv_hls_pynq_prj/current_conv/solution1/.autopilot/db/global.setting.tcl 
+Execute       source F:/Desktop/PRJ/current_lenet/current_conv_hls_pynq_prj/current_conv/solution1/.autopilot/db/load_feature.compgen.tcl 
+Execute       source F:/Desktop/PRJ/current_lenet/current_conv_hls_pynq_prj/current_conv/solution1/.autopilot/db/load_weight.compgen.tcl 
+Execute       source F:/Desktop/PRJ/current_lenet/current_conv_hls_pynq_prj/current_conv/solution1/.autopilot/db/multiply.compgen.tcl 
+Execute       source F:/Desktop/PRJ/current_lenet/current_conv_hls_pynq_prj/current_conv/solution1/.autopilot/db/conv.compgen.tcl 
 INFO-FLOW: DBG:CMD:       generate_ip_cores sim=0 export=0 expOnly=0 dstVlogDir=impl/.pcores/verilog_sim
-Execute       source F:/Desktop/HLS_study/current/current_conv/solution1/.autopilot/db/global.setting.tcl 
-Execute       source F:/Desktop/HLS_study/current/current_conv/solution1/.autopilot/db/load_feature.compgen.tcl 
-Execute       source F:/Desktop/HLS_study/current/current_conv/solution1/.autopilot/db/load_weight.compgen.tcl 
-Execute       source F:/Desktop/HLS_study/current/current_conv/solution1/.autopilot/db/multiply.compgen.tcl 
-Execute       source F:/Desktop/HLS_study/current/current_conv/solution1/.autopilot/db/conv.compgen.tcl 
-Execute       source F:/Desktop/HLS_study/current/current_conv/solution1/.autopilot/db/global.setting.tcl 
-Execute       source F:/Desktop/HLS_study/current/current_conv/solution1/.autopilot/db/conv.constraint.tcl 
-Execute       source F:/Desktop/HLS_study/current/current_conv/solution1/.autopilot/db/conv.tbgen.tcl 
+Execute       source F:/Desktop/PRJ/current_lenet/current_conv_hls_pynq_prj/current_conv/solution1/.autopilot/db/global.setting.tcl 
+Execute       source F:/Desktop/PRJ/current_lenet/current_conv_hls_pynq_prj/current_conv/solution1/.autopilot/db/load_feature.compgen.tcl 
+Execute       source F:/Desktop/PRJ/current_lenet/current_conv_hls_pynq_prj/current_conv/solution1/.autopilot/db/load_weight.compgen.tcl 
+Execute       source F:/Desktop/PRJ/current_lenet/current_conv_hls_pynq_prj/current_conv/solution1/.autopilot/db/multiply.compgen.tcl 
+Execute       source F:/Desktop/PRJ/current_lenet/current_conv_hls_pynq_prj/current_conv/solution1/.autopilot/db/conv.compgen.tcl 
+Execute       source F:/Desktop/PRJ/current_lenet/current_conv_hls_pynq_prj/current_conv/solution1/.autopilot/db/global.setting.tcl 
+Execute       source F:/Desktop/PRJ/current_lenet/current_conv_hls_pynq_prj/current_conv/solution1/.autopilot/db/conv.constraint.tcl 
+Execute       source F:/Desktop/PRJ/current_lenet/current_conv_hls_pynq_prj/current_conv/solution1/.autopilot/db/conv.tbgen.tcl 
 INFO-FLOW: DBG:CMD:       hasPcoreIpAdapter=false #gSsdmPorts=0
 INFO-FLOW: DBG:CMD: Skipping loadAnalyze_DB, #g_database=13
 INFO-FLOW: DBG:CMD:       generate_json is_phase_csynth=1 g_has_adaptors=false generate_bd_files=0 #modelList=10 #gSsdmPorts=0
-Execute       source F:/Desktop/HLS_study/current/current_conv/solution1/.autopilot/db/global.setting.tcl 
-Execute       source F:/Desktop/HLS_study/current/current_conv/solution1/.autopilot/db/global.setting.tcl 
-Execute       source F:/Desktop/HLS_study/current/current_conv/solution1/.autopilot/db/conv.tbgen.tcl 
-Execute       source F:/Desktop/HLS_study/current/current_conv/solution1/.autopilot/db/global.setting.tcl 
+Execute       source F:/Desktop/PRJ/current_lenet/current_conv_hls_pynq_prj/current_conv/solution1/.autopilot/db/global.setting.tcl 
+Execute       source F:/Desktop/PRJ/current_lenet/current_conv_hls_pynq_prj/current_conv/solution1/.autopilot/db/global.setting.tcl 
+Execute       source F:/Desktop/PRJ/current_lenet/current_conv_hls_pynq_prj/current_conv/solution1/.autopilot/db/conv.tbgen.tcl 
+Execute       source F:/Desktop/PRJ/current_lenet/current_conv_hls_pynq_prj/current_conv/solution1/.autopilot/db/global.setting.tcl 
 Execute       get_config_sdx -target 
 Execute       get_config_export -xo 
-Execute       source F:/Desktop/HLS_study/current/current_conv/solution1/.autopilot/db/global.setting.tcl 
-Execute       source F:/Desktop/HLS_study/current/current_conv/solution1/.autopilot/db/conv.constraint.tcl 
+Execute       source F:/Desktop/PRJ/current_lenet/current_conv_hls_pynq_prj/current_conv/solution1/.autopilot/db/global.setting.tcl 
+Execute       source F:/Desktop/PRJ/current_lenet/current_conv_hls_pynq_prj/current_conv/solution1/.autopilot/db/conv.constraint.tcl 
 Execute       sc_get_clocks conv 
-Execute       source F:/Desktop/HLS_study/current/current_conv/solution1/.autopilot/db/global.setting.tcl 
-Execute       source F:/Desktop/HLS_study/current/current_conv/solution1/impl/misc/conv_ap_fadd_0_full_dsp_32_ip.tcl 
-Execute       source F:/Desktop/HLS_study/current/current_conv/solution1/impl/misc/conv_ap_fmul_0_max_dsp_32_ip.tcl 
+Execute       source F:/Desktop/PRJ/current_lenet/current_conv_hls_pynq_prj/current_conv/solution1/.autopilot/db/global.setting.tcl 
+Execute       source F:/Desktop/PRJ/current_lenet/current_conv_hls_pynq_prj/current_conv/solution1/impl/misc/conv_ap_fadd_0_full_dsp_32_ip.tcl 
+Execute       source F:/Desktop/PRJ/current_lenet/current_conv_hls_pynq_prj/current_conv/solution1/impl/misc/conv_ap_fmul_0_max_dsp_32_ip.tcl 
 Execute       get_config_sdx -target 
 Execute       get_config_sdx -profile 
 Execute       ::config_rtl 
-INFO-FLOW: DBG:CMD: add_json_sdx_info kernel file does not exist: F:/Desktop/HLS_study/current/current_conv/solution1/.autopilot/db/kernel.internal.xml
+INFO-FLOW: DBG:CMD: add_json_sdx_info kernel file does not exist: F:/Desktop/PRJ/current_lenet/current_conv_hls_pynq_prj/current_conv/solution1/.autopilot/db/kernel.internal.xml
 INFO-FLOW: DBG:CMD:       delete-temp-dirs (skipped for debug)
-INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 171.977 ; gain = 87.238
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 172.777 ; gain = 87.672
 INFO: [SYSC 207-301] Generating SystemC RTL for conv.
 INFO: [VHDL 208-304] Generating VHDL RTL for conv.
 INFO: [VLOG 209-307] Generating Verilog RTL for conv.
-Command     autosyn done; 2.016 sec.
+Command     autosyn done; 2.001 sec.
 Execute     get_part 
 Execute     get_config_export -sdx_tcl 
-Command   csynth_design done; 6.427 sec.
-Command ap_source done; 6.601 sec.
+Command   csynth_design done; 6.278 sec.
+Command ap_source done; 6.448 sec.
 Execute cleanup_all 
-INFO-FLOW: Workspace F:/Desktop/HLS_study/current/current_conv/solution1 opened at Sun Apr 07 13:15:30 +0800 2024
+INFO-FLOW: Workspace F:/Desktop/PRJ/current_lenet/current_conv_hls_pynq_prj/current_conv/solution1 opened at Wed Apr 24 21:45:52 +0800 2024
 Execute     config_clock -quiet -name default -period 50 -default=false 
 INFO: [SYN 201-201] Setting up clock 'default' with a period of 50ns.
 Execute     open_platform DefaultPlatform 
@@ -724,21 +724,21 @@ Execute     get_config_export -version
 Execute     get_config_export -xo 
 Execute     config_export -format=ip_catalog -rtl=verilog 
 INFO-FLOW: DBG:CMD: export_design_wrap: -format ip_catalog -rtl verilog
-Execute     source F:/Desktop/HLS_study/current/current_conv/solution1/.autopilot/db/global.setting.tcl 
+Execute     source F:/Desktop/PRJ/current_lenet/current_conv_hls_pynq_prj/current_conv/solution1/.autopilot/db/global.setting.tcl 
 Execute     get_config_export -vivado_clock 
 Execute     get_top 
 Execute     get_config_sdx -target 
 Execute     get_config_rtl -auto_prefix 
 Execute     get_config_sdx -target 
 INFO-FLOW: DBG:CMD:   auto_impl: pack: -export -tool vivado -rtl verilog -sdx-target none
-Execute     source F:/Desktop/HLS_study/current/current_conv/solution1/.autopilot/db/global.setting.tcl 
-INFO-FLOW: DBG:CMD: read_platform_lib F:/Desktop/HLS_study/current/current_conv/solution1/.autopilot/db/global.setting.tcl
+Execute     source F:/Desktop/PRJ/current_lenet/current_conv_hls_pynq_prj/current_conv/solution1/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:CMD: read_platform_lib F:/Desktop/PRJ/current_lenet/current_conv_hls_pynq_prj/current_conv/solution1/.autopilot/db/global.setting.tcl
 Execute     source D:/Vivado/Vivado/2018.3/common/technology/generic/autopilot/common.gen 
 Execute       source D:/Vivado/Vivado/2018.3/common/technology/generic/autopilot/APCoreGen.gen 
 Execute     source D:/Vivado/Vivado/2018.3/common/technology/generic/autopilot/op.gen 
 Execute     source D:/Vivado/Vivado/2018.3/common/technology/generic/autopilot/op_simcore.gen 
 Execute     source D:/Vivado/Vivado/2018.3/common/technology/generic/autopilot/interface.gen 
-Execute     source F:/Desktop/HLS_study/current/current_conv/solution1/.autopilot/db/global.setting.tcl 
+Execute     source F:/Desktop/PRJ/current_lenet/current_conv_hls_pynq_prj/current_conv/solution1/.autopilot/db/global.setting.tcl 
 Execute     source D:/Vivado/Vivado/2018.3/common/technology/xilinx/zynq/zynq.gen 
 Execute       source D:/Vivado/Vivado/2018.3/common/technology/xilinx/common/virtex.gen 
 Execute         source D:/Vivado/Vivado/2018.3/common/technology/xilinx/common/xilinx.gen 
@@ -758,19 +758,19 @@ Execute         source D:/Vivado/Vivado/2018.3/common/technology/xilinx/common/d
 Execute     source D:/Vivado/Vivado/2018.3/common/technology/xilinx/zynq/zynq_fpv6.gen 
 Execute       source D:/Vivado/Vivado/2018.3/common/technology/xilinx/common/xilinx_fpv6.gen 
 INFO-FLOW: DBG:CMD:   using AESL_AUTOCG::g_clock_period=50.000 (was NA)
-Execute     source F:/Desktop/HLS_study/current/current_conv/solution1/.autopilot/db/global.setting.tcl 
+Execute     source F:/Desktop/PRJ/current_lenet/current_conv_hls_pynq_prj/current_conv/solution1/.autopilot/db/global.setting.tcl 
 INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
-Execute     source F:/Desktop/HLS_study/current/current_conv/solution1/.autopilot/db/global.setting.tcl 
+Execute     source F:/Desktop/PRJ/current_lenet/current_conv_hls_pynq_prj/current_conv/solution1/.autopilot/db/global.setting.tcl 
 INFO-FLOW: DBG:CMD: automg_wrap -export -pcore_version 1.00.a -rtl vlog -sdx-target none -tool Vivado -impltomg_flag
 INFO-FLOW: DBG:CMD:     auto_generate -export -pcore_version 1.00.a -rtl vlog -sdx-target none -tool Vivado -impltomg_flag
-Execute     source F:/Desktop/HLS_study/current/current_conv/solution1/.autopilot/db/global.setting.tcl 
-INFO-FLOW: DBG:CMD: read_platform_lib F:/Desktop/HLS_study/current/current_conv/solution1/.autopilot/db/global.setting.tcl
+Execute     source F:/Desktop/PRJ/current_lenet/current_conv_hls_pynq_prj/current_conv/solution1/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:CMD: read_platform_lib F:/Desktop/PRJ/current_lenet/current_conv_hls_pynq_prj/current_conv/solution1/.autopilot/db/global.setting.tcl
 Execute     source D:/Vivado/Vivado/2018.3/common/technology/generic/autopilot/common.gen 
 Execute       source D:/Vivado/Vivado/2018.3/common/technology/generic/autopilot/APCoreGen.gen 
 Execute     source D:/Vivado/Vivado/2018.3/common/technology/generic/autopilot/op.gen 
 Execute     source D:/Vivado/Vivado/2018.3/common/technology/generic/autopilot/op_simcore.gen 
 Execute     source D:/Vivado/Vivado/2018.3/common/technology/generic/autopilot/interface.gen 
-Execute     source F:/Desktop/HLS_study/current/current_conv/solution1/.autopilot/db/global.setting.tcl 
+Execute     source F:/Desktop/PRJ/current_lenet/current_conv_hls_pynq_prj/current_conv/solution1/.autopilot/db/global.setting.tcl 
 Execute     source D:/Vivado/Vivado/2018.3/common/technology/xilinx/zynq/zynq.gen 
 Execute       source D:/Vivado/Vivado/2018.3/common/technology/xilinx/common/virtex.gen 
 Execute         source D:/Vivado/Vivado/2018.3/common/technology/xilinx/common/xilinx.gen 
@@ -790,78 +790,78 @@ Execute         source D:/Vivado/Vivado/2018.3/common/technology/xilinx/common/d
 Execute     source D:/Vivado/Vivado/2018.3/common/technology/xilinx/zynq/zynq_fpv6.gen 
 Execute       source D:/Vivado/Vivado/2018.3/common/technology/xilinx/common/xilinx_fpv6.gen 
 INFO-FLOW: DBG:CMD:       initCTypeInfo top_module=conv xml_exists=1
-Execute     source F:/Desktop/HLS_study/current/current_conv/solution1/.autopilot/db/conv.rtl_wrap.cfg.tcl 
-Execute     source F:/Desktop/HLS_study/current/current_conv/solution1/.autopilot/db/conv.rtl_wrap.cfg.tcl 
-Execute     source F:/Desktop/HLS_study/current/current_conv/solution1/.autopilot/db/conv.rtl_wrap.cfg.tcl 
-Execute     source F:/Desktop/HLS_study/current/current_conv/solution1/.autopilot/db/conv.tbgen.tcl 
-Execute     source F:/Desktop/HLS_study/current/current_conv/solution1/.autopilot/db/conv.tbgen.tcl 
+Execute     source F:/Desktop/PRJ/current_lenet/current_conv_hls_pynq_prj/current_conv/solution1/.autopilot/db/conv.rtl_wrap.cfg.tcl 
+Execute     source F:/Desktop/PRJ/current_lenet/current_conv_hls_pynq_prj/current_conv/solution1/.autopilot/db/conv.rtl_wrap.cfg.tcl 
+Execute     source F:/Desktop/PRJ/current_lenet/current_conv_hls_pynq_prj/current_conv/solution1/.autopilot/db/conv.rtl_wrap.cfg.tcl 
+Execute     source F:/Desktop/PRJ/current_lenet/current_conv_hls_pynq_prj/current_conv/solution1/.autopilot/db/conv.tbgen.tcl 
+Execute     source F:/Desktop/PRJ/current_lenet/current_conv_hls_pynq_prj/current_conv/solution1/.autopilot/db/conv.tbgen.tcl 
 INFO-FLOW: DBG:CMD:       export_impl_rtl
 INFO-FLOW: DBG:CMD:       generate_ip_cores sim=0 export=0 expOnly=0 dstVlogDir=impl/.verilog
-Execute     source F:/Desktop/HLS_study/current/current_conv/solution1/.autopilot/db/global.setting.tcl 
-Execute     source F:/Desktop/HLS_study/current/current_conv/solution1/.autopilot/db/load_feature.compgen.tcl 
-Execute     source F:/Desktop/HLS_study/current/current_conv/solution1/.autopilot/db/load_weight.compgen.tcl 
-Execute     source F:/Desktop/HLS_study/current/current_conv/solution1/.autopilot/db/multiply.compgen.tcl 
-Execute     source F:/Desktop/HLS_study/current/current_conv/solution1/.autopilot/db/conv.compgen.tcl 
+Execute     source F:/Desktop/PRJ/current_lenet/current_conv_hls_pynq_prj/current_conv/solution1/.autopilot/db/global.setting.tcl 
+Execute     source F:/Desktop/PRJ/current_lenet/current_conv_hls_pynq_prj/current_conv/solution1/.autopilot/db/load_feature.compgen.tcl 
+Execute     source F:/Desktop/PRJ/current_lenet/current_conv_hls_pynq_prj/current_conv/solution1/.autopilot/db/load_weight.compgen.tcl 
+Execute     source F:/Desktop/PRJ/current_lenet/current_conv_hls_pynq_prj/current_conv/solution1/.autopilot/db/multiply.compgen.tcl 
+Execute     source F:/Desktop/PRJ/current_lenet/current_conv_hls_pynq_prj/current_conv/solution1/.autopilot/db/conv.compgen.tcl 
 INFO-FLOW: DBG:CMD:       generate_ip_cores sim=0 export=1 expOnly=1 dstVlogDir=impl/.pcores/verilog
-Execute     source F:/Desktop/HLS_study/current/current_conv/solution1/.autopilot/db/global.setting.tcl 
-Execute     source F:/Desktop/HLS_study/current/current_conv/solution1/.autopilot/db/load_feature.compgen.tcl 
-Execute     source F:/Desktop/HLS_study/current/current_conv/solution1/.autopilot/db/load_weight.compgen.tcl 
-Execute     source F:/Desktop/HLS_study/current/current_conv/solution1/.autopilot/db/multiply.compgen.tcl 
-Execute     source F:/Desktop/HLS_study/current/current_conv/solution1/.autopilot/db/conv.compgen.tcl 
+Execute     source F:/Desktop/PRJ/current_lenet/current_conv_hls_pynq_prj/current_conv/solution1/.autopilot/db/global.setting.tcl 
+Execute     source F:/Desktop/PRJ/current_lenet/current_conv_hls_pynq_prj/current_conv/solution1/.autopilot/db/load_feature.compgen.tcl 
+Execute     source F:/Desktop/PRJ/current_lenet/current_conv_hls_pynq_prj/current_conv/solution1/.autopilot/db/load_weight.compgen.tcl 
+Execute     source F:/Desktop/PRJ/current_lenet/current_conv_hls_pynq_prj/current_conv/solution1/.autopilot/db/multiply.compgen.tcl 
+Execute     source F:/Desktop/PRJ/current_lenet/current_conv_hls_pynq_prj/current_conv/solution1/.autopilot/db/conv.compgen.tcl 
 INFO-FLOW: DBG:CMD:       generate_ip_cores sim=0 export=0 expOnly=0 dstVlogDir=impl/.pcores/verilog_sim
-Execute     source F:/Desktop/HLS_study/current/current_conv/solution1/.autopilot/db/global.setting.tcl 
-Execute     source F:/Desktop/HLS_study/current/current_conv/solution1/.autopilot/db/load_feature.compgen.tcl 
-Execute     source F:/Desktop/HLS_study/current/current_conv/solution1/.autopilot/db/load_weight.compgen.tcl 
-Execute     source F:/Desktop/HLS_study/current/current_conv/solution1/.autopilot/db/multiply.compgen.tcl 
-Execute     source F:/Desktop/HLS_study/current/current_conv/solution1/.autopilot/db/conv.compgen.tcl 
-Execute     source F:/Desktop/HLS_study/current/current_conv/solution1/.autopilot/db/global.setting.tcl 
-Execute     source F:/Desktop/HLS_study/current/current_conv/solution1/.autopilot/db/conv.constraint.tcl 
-Execute     source F:/Desktop/HLS_study/current/current_conv/solution1/.autopilot/db/conv.tbgen.tcl 
+Execute     source F:/Desktop/PRJ/current_lenet/current_conv_hls_pynq_prj/current_conv/solution1/.autopilot/db/global.setting.tcl 
+Execute     source F:/Desktop/PRJ/current_lenet/current_conv_hls_pynq_prj/current_conv/solution1/.autopilot/db/load_feature.compgen.tcl 
+Execute     source F:/Desktop/PRJ/current_lenet/current_conv_hls_pynq_prj/current_conv/solution1/.autopilot/db/load_weight.compgen.tcl 
+Execute     source F:/Desktop/PRJ/current_lenet/current_conv_hls_pynq_prj/current_conv/solution1/.autopilot/db/multiply.compgen.tcl 
+Execute     source F:/Desktop/PRJ/current_lenet/current_conv_hls_pynq_prj/current_conv/solution1/.autopilot/db/conv.compgen.tcl 
+Execute     source F:/Desktop/PRJ/current_lenet/current_conv_hls_pynq_prj/current_conv/solution1/.autopilot/db/global.setting.tcl 
+Execute     source F:/Desktop/PRJ/current_lenet/current_conv_hls_pynq_prj/current_conv/solution1/.autopilot/db/conv.constraint.tcl 
+Execute     source F:/Desktop/PRJ/current_lenet/current_conv_hls_pynq_prj/current_conv/solution1/.autopilot/db/conv.tbgen.tcl 
 INFO-FLOW: DBG:CMD:       hasPcoreIpAdapter=false #gSsdmPorts=0
-INFO-FLOW: DBG:CMD:       copy ip_driver_dir 1_0 F:/Desktop/HLS_study/current/current_conv/solution1/.autopilot/db/driver
+INFO-FLOW: DBG:CMD:       copy ip_driver_dir 1_0 F:/Desktop/PRJ/current_lenet/current_conv_hls_pynq_prj/current_conv/solution1/.autopilot/db/driver
 INFO-FLOW: DBG:CMD:       generate_ip_script #gSsdmPorts=0
-Execute     source F:/Desktop/HLS_study/current/current_conv/solution1/.autopilot/db/conv.tbgen.tcl 
-Execute     source F:/Desktop/HLS_study/current/current_conv/solution1/.autopilot/db/global.setting.tcl 
+Execute     source F:/Desktop/PRJ/current_lenet/current_conv_hls_pynq_prj/current_conv/solution1/.autopilot/db/conv.tbgen.tcl 
+Execute     source F:/Desktop/PRJ/current_lenet/current_conv_hls_pynq_prj/current_conv/solution1/.autopilot/db/global.setting.tcl 
 Execute     get_config_sdx -target 
 INFO-FLOW: DBG:CMD:       generate_ip_auxiliary
-Execute     source F:/Desktop/HLS_study/current/current_conv/solution1/.autopilot/db/global.setting.tcl 
+Execute     source F:/Desktop/PRJ/current_lenet/current_conv_hls_pynq_prj/current_conv/solution1/.autopilot/db/global.setting.tcl 
 INFO-FLOW: DBG:CMD:       prepArgInfo -> loadAnalyze_DB top_module=conv
-Execute     source F:/Desktop/HLS_study/current/current_conv/solution1/.autopilot/db/conv.rtl_wrap.cfg.tcl 
-Execute     source F:/Desktop/HLS_study/current/current_conv/solution1/.autopilot/db/conv.rtl_wrap.cfg.tcl 
-Execute     source F:/Desktop/HLS_study/current/current_conv/solution1/.autopilot/db/conv.rtl_wrap.cfg.tcl 
-Execute     source F:/Desktop/HLS_study/current/current_conv/solution1/.autopilot/db/conv.tbgen.tcl 
-Execute     source F:/Desktop/HLS_study/current/current_conv/solution1/.autopilot/db/conv.tbgen.tcl 
-Execute     source F:/Desktop/HLS_study/current/current_conv/solution1/.autopilot/db/conv.tbgen.tcl 
+Execute     source F:/Desktop/PRJ/current_lenet/current_conv_hls_pynq_prj/current_conv/solution1/.autopilot/db/conv.rtl_wrap.cfg.tcl 
+Execute     source F:/Desktop/PRJ/current_lenet/current_conv_hls_pynq_prj/current_conv/solution1/.autopilot/db/conv.rtl_wrap.cfg.tcl 
+Execute     source F:/Desktop/PRJ/current_lenet/current_conv_hls_pynq_prj/current_conv/solution1/.autopilot/db/conv.rtl_wrap.cfg.tcl 
+Execute     source F:/Desktop/PRJ/current_lenet/current_conv_hls_pynq_prj/current_conv/solution1/.autopilot/db/conv.tbgen.tcl 
+Execute     source F:/Desktop/PRJ/current_lenet/current_conv_hls_pynq_prj/current_conv/solution1/.autopilot/db/conv.tbgen.tcl 
+Execute     source F:/Desktop/PRJ/current_lenet/current_conv_hls_pynq_prj/current_conv/solution1/.autopilot/db/conv.tbgen.tcl 
 INFO-FLOW: DBG:CMD:       generate_top_info
 INFO-FLOW: DBG:CMD:       prepArgInfo -> loadAnalyze_DB top_module=conv
-Execute     source F:/Desktop/HLS_study/current/current_conv/solution1/.autopilot/db/conv.rtl_wrap.cfg.tcl 
-Execute     source F:/Desktop/HLS_study/current/current_conv/solution1/.autopilot/db/conv.rtl_wrap.cfg.tcl 
-Execute     source F:/Desktop/HLS_study/current/current_conv/solution1/.autopilot/db/conv.rtl_wrap.cfg.tcl 
-Execute     source F:/Desktop/HLS_study/current/current_conv/solution1/.autopilot/db/conv.tbgen.tcl 
-Execute     source F:/Desktop/HLS_study/current/current_conv/solution1/.autopilot/db/conv.tbgen.tcl 
-Execute     source F:/Desktop/HLS_study/current/current_conv/solution1/.autopilot/db/global.setting.tcl 
-Execute     source F:/Desktop/HLS_study/current/current_conv/solution1/.autopilot/db/conv.tbgen.tcl 
-Execute     source F:/Desktop/HLS_study/current/current_conv/solution1/.autopilot/db/global.setting.tcl 
-Execute     source F:/Desktop/HLS_study/current/current_conv/solution1/.autopilot/db/conv.constraint.tcl 
+Execute     source F:/Desktop/PRJ/current_lenet/current_conv_hls_pynq_prj/current_conv/solution1/.autopilot/db/conv.rtl_wrap.cfg.tcl 
+Execute     source F:/Desktop/PRJ/current_lenet/current_conv_hls_pynq_prj/current_conv/solution1/.autopilot/db/conv.rtl_wrap.cfg.tcl 
+Execute     source F:/Desktop/PRJ/current_lenet/current_conv_hls_pynq_prj/current_conv/solution1/.autopilot/db/conv.rtl_wrap.cfg.tcl 
+Execute     source F:/Desktop/PRJ/current_lenet/current_conv_hls_pynq_prj/current_conv/solution1/.autopilot/db/conv.tbgen.tcl 
+Execute     source F:/Desktop/PRJ/current_lenet/current_conv_hls_pynq_prj/current_conv/solution1/.autopilot/db/conv.tbgen.tcl 
+Execute     source F:/Desktop/PRJ/current_lenet/current_conv_hls_pynq_prj/current_conv/solution1/.autopilot/db/global.setting.tcl 
+Execute     source F:/Desktop/PRJ/current_lenet/current_conv_hls_pynq_prj/current_conv/solution1/.autopilot/db/conv.tbgen.tcl 
+Execute     source F:/Desktop/PRJ/current_lenet/current_conv_hls_pynq_prj/current_conv/solution1/.autopilot/db/global.setting.tcl 
+Execute     source F:/Desktop/PRJ/current_lenet/current_conv_hls_pynq_prj/current_conv/solution1/.autopilot/db/conv.constraint.tcl 
 INFO-FLOW: DBG:CMD:       generate_ipi_example_script
 INFO-FLOW: DBG:CMD:       generate_syn_sh
-Execute     source F:/Desktop/HLS_study/current/current_conv/solution1/.autopilot/db/global.setting.tcl 
-Execute     source F:/Desktop/HLS_study/current/current_conv/solution1/.autopilot/db/global.setting.tcl 
+Execute     source F:/Desktop/PRJ/current_lenet/current_conv_hls_pynq_prj/current_conv/solution1/.autopilot/db/global.setting.tcl 
+Execute     source F:/Desktop/PRJ/current_lenet/current_conv_hls_pynq_prj/current_conv/solution1/.autopilot/db/global.setting.tcl 
 INFO-FLOW: DBG:CMD:       generate_imp_constraints
-Execute     source F:/Desktop/HLS_study/current/current_conv/solution1/.autopilot/db/conv.constraint.tcl 
-Execute     source F:/Desktop/HLS_study/current/current_conv/solution1/.autopilot/db/conv.tbgen.tcl 
-Execute     source F:/Desktop/HLS_study/current/current_conv/solution1/.autopilot/db/conv.constraint.tcl 
-Execute     source F:/Desktop/HLS_study/current/current_conv/solution1/.autopilot/db/conv.tbgen.tcl 
+Execute     source F:/Desktop/PRJ/current_lenet/current_conv_hls_pynq_prj/current_conv/solution1/.autopilot/db/conv.constraint.tcl 
+Execute     source F:/Desktop/PRJ/current_lenet/current_conv_hls_pynq_prj/current_conv/solution1/.autopilot/db/conv.tbgen.tcl 
+Execute     source F:/Desktop/PRJ/current_lenet/current_conv_hls_pynq_prj/current_conv/solution1/.autopilot/db/conv.constraint.tcl 
+Execute     source F:/Desktop/PRJ/current_lenet/current_conv_hls_pynq_prj/current_conv/solution1/.autopilot/db/conv.tbgen.tcl 
 INFO-FLOW: DBG:CMD:       copy-tb-rtl-files
 INFO-FLOW: DBG:CMD:       copy-tb-data-files
 INFO-FLOW: DBG:CMD:       delete-temp-dirs (skipped for debug)
-INFO-FLOW: DBG:CMD: read_platform_lib F:/Desktop/HLS_study/current/current_conv/solution1/.autopilot/db/global.setting.tcl
+INFO-FLOW: DBG:CMD: read_platform_lib F:/Desktop/PRJ/current_lenet/current_conv_hls_pynq_prj/current_conv/solution1/.autopilot/db/global.setting.tcl
 Execute     source D:/Vivado/Vivado/2018.3/common/technology/generic/autopilot/common.gen 
 Execute       source D:/Vivado/Vivado/2018.3/common/technology/generic/autopilot/APCoreGen.gen 
 Execute     source D:/Vivado/Vivado/2018.3/common/technology/generic/autopilot/op.gen 
 Execute     source D:/Vivado/Vivado/2018.3/common/technology/generic/autopilot/op_simcore.gen 
 Execute     source D:/Vivado/Vivado/2018.3/common/technology/generic/autopilot/interface.gen 
-Execute     source F:/Desktop/HLS_study/current/current_conv/solution1/.autopilot/db/global.setting.tcl 
+Execute     source F:/Desktop/PRJ/current_lenet/current_conv_hls_pynq_prj/current_conv/solution1/.autopilot/db/global.setting.tcl 
 Execute     source D:/Vivado/Vivado/2018.3/common/technology/xilinx/zynq/zynq.gen 
 Execute       source D:/Vivado/Vivado/2018.3/common/technology/xilinx/common/virtex.gen 
 Execute         source D:/Vivado/Vivado/2018.3/common/technology/xilinx/common/xilinx.gen 
@@ -880,7 +880,7 @@ Execute           source D:/Vivado/Vivado/2018.3/common/technology/xilinx/ip/xfi
 Execute         source D:/Vivado/Vivado/2018.3/common/technology/xilinx/common/dsp48.gen 
 Execute     source D:/Vivado/Vivado/2018.3/common/technology/xilinx/zynq/zynq_fpv6.gen 
 Execute       source D:/Vivado/Vivado/2018.3/common/technology/xilinx/common/xilinx_fpv6.gen 
-INFO-FLOW: DBG:CMD:     exec F:/Desktop/HLS_study/current/current_conv/solution1/impl/ip/pack.bat
-Command   export_design done; 7.222 sec.
-Command ap_source done; 7.366 sec.
+INFO-FLOW: DBG:CMD:     exec F:/Desktop/PRJ/current_lenet/current_conv_hls_pynq_prj/current_conv/solution1/impl/ip/pack.bat
+Command   export_design done; 9 sec.
+Command ap_source done; 9.143 sec.
 Execute cleanup_all 

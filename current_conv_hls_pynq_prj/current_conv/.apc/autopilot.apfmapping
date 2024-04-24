@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
   <source>
-    <originFiles name="current_conv.cpp" path="F:\Desktop\Vivado_prj\current_conv_hls_pynq_prj\current_conv\current_conv.cpp"/>
+    <originFiles name="current_conv.cpp" path="F:\Desktop\PRJ\current_lenet\current_conv_hls_pynq_prj\current_conv\current_conv.cpp"/>
   </source>
   <testbench>
-    <originFiles name="main.cpp" path="F:\Desktop\Vivado_prj\current_conv_hls_pynq_prj\current_conv\main.cpp"/>
+    <originFiles name="main.cpp" path="F:\Desktop\PRJ\current_lenet\current_conv_hls_pynq_prj\current_conv\main.cpp"/>
   </testbench>
 </autopilotfilemapping:AutoPilotFileMapping>

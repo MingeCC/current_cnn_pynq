@@ -194,7 +194,7 @@ architecture behav of multiply is
 
 
 begin
-    conv_fadd_32ns_32bkb_U18 : component conv_fadd_32ns_32bkb
+    conv_fadd_32ns_32bkb_U20 : component conv_fadd_32ns_32bkb
     generic map (
         ID => 1,
         NUM_STAGE => 1,
@@ -206,7 +206,7 @@ begin
         din1 => tmp_9_fu_193_p2,
         dout => sum_fu_188_p2);
 
-    conv_fmul_32ns_32cud_U19 : component conv_fmul_32ns_32cud
+    conv_fmul_32ns_32cud_U21 : component conv_fmul_32ns_32cud
     generic map (
         ID => 1,
         NUM_STAGE => 1,

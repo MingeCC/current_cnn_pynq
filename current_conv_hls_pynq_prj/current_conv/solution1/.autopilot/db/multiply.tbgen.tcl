@@ -83,8 +83,8 @@ set RtlHierarchyInfo {[
 			{"Name" : "chin", "Type" : "None", "Direction" : "I"},
 			{"Name" : "kx", "Type" : "None", "Direction" : "I"},
 			{"Name" : "ky", "Type" : "None", "Direction" : "I"}]},
-	{"ID" : "1", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.conv_fadd_32ns_32bkb_U18", "Parent" : "0"},
-	{"ID" : "2", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.conv_fmul_32ns_32cud_U19", "Parent" : "0"}]}
+	{"ID" : "1", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.conv_fadd_32ns_32bkb_U20", "Parent" : "0"},
+	{"ID" : "2", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.conv_fmul_32ns_32cud_U21", "Parent" : "0"}]}
 
 
 set ArgLastReadFirstWriteLatency {

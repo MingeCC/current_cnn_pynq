@@ -77,7 +77,7 @@
       "impl\/misc\/conv_ap_fadd_0_full_dsp_32_ip.tcl",
       "impl\/misc\/conv_ap_fmul_0_max_dsp_32_ip.tcl"
     ],
-    "DesignXml": "F:\/Desktop\/HLS_study\/current\/current_conv\/solution1\/.autopilot\/db\/conv.design.xml"
+    "DesignXml": "F:\/Desktop\/PRJ\/current_lenet\/current_conv_hls_pynq_prj\/current_conv\/solution1\/.autopilot\/db\/conv.design.xml"
   },
   "SubcoreInfo": {
     "HasXpmMemory": false,
@@ -1080,15 +1080,15 @@
       "Instances": [
         {
           "ModuleName": "multiply",
-          "InstanceName": "grp_multiply_fu_292"
+          "InstanceName": "grp_multiply_fu_272"
         },
         {
           "ModuleName": "load_feature",
-          "InstanceName": "grp_load_feature_fu_301"
+          "InstanceName": "grp_load_feature_fu_281"
         },
         {
           "ModuleName": "load_weight",
-          "InstanceName": "grp_load_weight_fu_316"
+          "InstanceName": "grp_load_weight_fu_300"
         }
       ]
     },
@@ -1116,9 +1116,9 @@
           }],
         "Area": {
           "BRAM_18K": "0",
-          "DSP48E": "18",
-          "FF": "843",
-          "LUT": "1943"
+          "DSP48E": "24",
+          "FF": "907",
+          "LUT": "2061"
         }
       },
       "load_weight": {
@@ -1214,9 +1214,9 @@
           }],
         "Area": {
           "BRAM_18K": "130",
-          "DSP48E": "61",
-          "FF": "5226",
-          "LUT": "8160"
+          "DSP48E": "67",
+          "FF": "5098",
+          "LUT": "8104"
         }
       }
     }
@@ -1231,7 +1231,7 @@
   },
   "GenData": {
     "DataVersion": "0.1",
-    "Time": "2024-04-07 13:15:20 +0800",
+    "Time": "2024-04-24 21:45:33 +0800",
     "ToolName": "vivado_hls",
     "ToolVersion": "2018.3"
   }
